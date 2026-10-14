@@ -1,0 +1,46 @@
+ 警告メッセージ: 
+1:  パッケージ ‘readxl’ はバージョン 4.3.3 の R の下で造られました  
+2:  パッケージ ‘jsonlite’ はバージョン 4.3.3 の R の下で造られました  
+
+ 次のパッケージを付け加えます: ‘igraph’ 
+
+ 以下のオブジェクトは ‘package:tibble’ からマスクされています:
+
+    as_data_frame
+
+ 以下のオブジェクトは ‘package:dplyr’ からマスクされています:
+
+    as_data_frame, groups, union
+
+ 以下のオブジェクトは ‘package:stats’ からマスクされています:
+
+    decompose, spectrum
+
+ 以下のオブジェクトは ‘package:base’ からマスクされています:
+
+    union
+
+Total Table_S4_1 rows: 74 (N-glycan: 62, GSL: 12)
+WARNING: 3 tokens not in GlyTouCan format:
+[1] "N/A"          "Structure ID"
+Total N-glycan ID tokens: 130
+Unique GlyTouCan IDs: 130
+Need to fetch 0 new IDs (cached: 166)
+WURCS lookup: 130 ok / 0 fail
+
+===== toposeq conversion result =====
+
+ambiguous_skip             ok 
+            18            112 
+End-to-end ok: 112 / 130 (86.2%)
+
+18 structures classified as ambiguous_skip (truly multi-parent LIN, biologically uncertain assignment).
+First 5:
+# A tibble: 5 × 2
+  glytoucan wurcs                                                               
+  <chr>     <chr>                                                               
+1 G90717TP  WURCS=2.0/5,10,9/[a2122h-1b_1-5_2*NCC/3=O][a1122h-1b_1-5][a1122h-1a…
+2 G42032ZI  WURCS=2.0/5,10,9/[a2122h-1b_1-5_2*NCC/3=O][a1122h-1b_1-5][a1122h-1a…
+3 G69452KV  WURCS=2.0/6,10,9/[a2122h-1b_1-5_2*NCC/3=O][a1122h-1b_1-5][a1122h-1a…
+4 G72368JX  WURCS=2.0/5,10,9/[a2122h-1b_1-5_2*NCC/3=O][a1122h-1b_1-5][a1122h-1a…
+5 G87433AX  WURCS=2.0/5,10,9/[a2122h-1b_1-5_2*NCC/3=O][a1122h-1b_1-5][a1122h-1a…

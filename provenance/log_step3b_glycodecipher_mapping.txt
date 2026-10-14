@@ -1,0 +1,100 @@
+
+ 次のパッケージを付け加えます: ‘dplyr’ 
+
+ 以下のオブジェクトは ‘package:stats’ からマスクされています:
+
+    filter, lag
+
+ 以下のオブジェクトは ‘package:base’ からマスクされています:
+
+    intersect, setdiff, setequal, union
+
+
+ 次のパッケージを付け加えます: ‘igraph’ 
+
+ 以下のオブジェクトは ‘package:dplyr’ からマスクされています:
+
+    as_data_frame, groups, union
+
+ 以下のオブジェクトは ‘package:stats’ からマスクされています:
+
+    decompose, spectrum
+
+ 以下のオブジェクトは ‘package:base’ からマスクされています:
+
+    union
+
+Working directory: <repository root> 
+
+ 警告メッセージ: 
+ パッケージ ‘readxl’ はバージョン 4.3.3 の R の下で造られました  
+=== Section 1: Loading data ===
+GlycoDecipher library loaded: 10936 entries
+Triplet data loaded: 2316 enzyme-reaction pairs
+  Unique enzymes: 93 
+  Enzyme classes: Glycosyltransferase, , Glycosidase, N_linked, Galactoside alpha-(1,2)-fucosyltransferase 1, Galactoside alpha-(1,2)-fucosyltransferase 2, Beta-1,4-galactosyltransferase 5, Beta-1,4-galactosyltransferase 3, Beta-1,4-galactosyltransferase 4, Beta-1,4-galactosyltransferase 2, Beta-1,4-galactosyltransferase 1, N-acetyllactosaminide beta-1,6-N-acetylglucosaminyl-transferase, Histo-blood group ABO system transferase, CMP-N-acetylneuraminate-beta-galactosamide-alpha-2,3-sialyltransferase 1, Alpha-(1,6)-fucosyltransferase, Alpha-1,3-mannosyl-glycoprotein 2-beta-N-acetylglucosaminyltransferase, Alpha-1,3-mannosyl-glycoprotein 4-beta-N-acetylglucosaminyltransferase C, Alpha-1,3-mannosyl-glycoprotein 4-beta-N-acetylglucosaminyltransferase A, Alpha-1,3-mannosyl-glycoprotein 4-beta-N-acetylglucosaminyltransferase B, Alpha-1,6-mannosylglycoprotein 6-beta-N-acetylglucosaminyltransferase A, Alpha-1,6-mannosylglycoprotein 6-beta-N-acetylglucosaminyltransferase B, Alpha-1,6-mannosyl-glycoprotein 2-beta-N-acetylglucosaminyltransferase, Inactive N-acetyllactosaminide alpha-1,3-galactosyltransferase, Alpha-1,3-galactosyltransferase 2, CMP-N-acetylneuraminate-beta-1,4-galactoside alpha-2,3-sialyltransferase, CMP-N-acetylneuraminate-beta-galactosamide-alpha-2,3-sialyltransferase 4, Type 2 lactosamine alpha-2,3-sialyltransferase, Beta-1,4-N-acetylgalactosaminyltransferase 3, N-acetyl-beta-glucosaminyl-glycoprotein 4-beta-N-acetylgalactosaminyltransferase 1, Beta-galactoside alpha-2,6-sialyltransferase 1, Beta-galactoside alpha-2,6-sialyltransferase 2, UDP-GlcNAc:betaGal beta-1,3-N-acetylglucosaminyltransferase 8, N-acetyllactosaminide beta-1,3-N-acetylglucosaminyltransferase 4, N-acetyllactosaminide beta-1,3-N-acetylglucosaminyltransferase 2, Beta-1,4-mannosyl-glycoprotein 4-beta-N-acetylglucosaminyltransferase, Dol-P-Man:Man(5)GlcNAc(2)-PP-Dol alpha-1,3-mannosyltransferase, GDP-Man:Man(3)GlcNAc(2)-PP-Dol alpha-1,2-mannosyltransferase, Beta-1,3-galactosyltransferase 2, Beta-1,3-galactosyltransferase 4, Beta-1,3-galactosyltransferase 5, Beta-1,3-galactosyltransferase 1, 3-galactosyl-N-acetylglucosaminide 4-alpha-L-fucosyltransferase FUT3, Alpha-(1,3)-fucosyltransferase 4, 4-galactosyl-N-acetylglucosaminide 3-alpha-L-fucosyltransferase FUT6, 4-galactosyl-N-acetylglucosaminide 3-alpha-L-fucosyltransferase FUT5, 4-galactosyl-N-acetylglucosaminide 3-alpha-L-fucosyltransferase 9, CMP-N-acetylneuraminate-beta-galactosamide-alpha-2,3-sialyltransferase 2, Alpha-(1,3)-fucosyltransferase 7, N-acetyllactosaminide beta-1,3-N-acetylglucosaminyltransferase 3, Dol-P-Man:Man(7)GlcNAc(2)-PP-Dol alpha-1,6-mannosyltransferase, Alpha-1,4-N-acetylglucosaminyltransferase, Beta-1,4 N-acetylgalactosaminyltransferase 1, Beta-1,4 N-acetylgalactosaminyltransferase 2, Carbohydrate sulfotransferase 9, Carbohydrate sulfotransferase 8, Alpha-1,2-mannosyltransferase ALG9, Beta-1,3-glucosyltransferase, Dol-P-Glc:Glc(2)Man(9)GlcNAc(2)-PP-Dol alpha-1,2-glucosyltransferase, Dolichyl pyrophosphate Glc1Man9GlcNAc2 alpha-1,3-glucosyltransferase, Dolichyl pyrophosphate Man9GlcNAc2 alpha-1,3-glucosyltransferase 
+
+=== Section 2: WURCS -> topoSeq conversion ===
+Using 9 cores for parallel processing
+Converting 10936 WURCS strings to topoSeq...
+topoSeq conversion complete:
+  Total entries: 8412 
+  Valid topoSeqs: 8098 
+  Unique topoSeqs: 3299 
+
+Working with 3299 unique topoSeqs
+
+=== Section 3: Building igraph objects ===
+Converting 3299 library topoSeqs to igraph...
+Valid igraph objects: 3299 
+Converting triplet reactants and products to igraph...
+Triplet igraph conversion complete
+
+=== Section 4: Substructure matching ===
+Matrix dimensions: 2316 triplets x 3299 glycans
+Matching reactants against library ( 4  chunks)...
+  Reactant matching done in 42.3 minutes
+Matching products against library...
+  Product matching done in 41.3 minutes
+
+=== Section 4b: Applying enzyme class rules ===
+Rule application complete
+  Non-NA entries: 7640484 of 7640484 
+  TRUE entries: 761979 
+
+=== Section 5: Aggregation and cleaning ===
+After enzyme aggregation: 93 enzymes x 3299 glycans
+  Removed 2 enzymes mapping to all glycans
+  Removed 7 enzymes mapping to no glycans
+Final matrix: 84 enzymes x 3299 glycans
+
+=== Section 6: Summary statistics ===
+Total library glycans (valid topoSeq): 8098 
+Unique topoSeqs in library: 3299 
+Enzymes in final matrix: 84 
+Glycans with at least one enzyme: 3299 
+Mappings per enzyme: min = 2 , median = 1064 , max = 3297 
+Enzymes per glycan: min = 2 , median = 37 , max = 50 
+
+Saved: output/res_clean_glycodecipher.rds
+Saved: output/glycodecipher_toposeq_map.rds
+
+=== Section 7: Comparison with Kizuka subset ===
+Kizuka res_clean: 48 enzymes x 97 glycans
+GlycoDecipher res_clean: 84 enzymes x 3299 glycans
+
+Enzymes in Kizuka: 48 
+Enzymes in GlycoDecipher: 84 
+Overlap: 48 
+Kizuka-only: 0 
+GlycoDecipher-only: 36 
+
+topoSeqs in Kizuka: 97 
+topoSeqs in GlycoDecipher: 3299 
+Overlap: 66 
+Kizuka subset coverage: 68 %
+
+Consistency on overlapping entries: 3168 / 3168 ( 100 %)
+
+=== Total runtime: 83.6 minutes ===
+=== Processing complete ===

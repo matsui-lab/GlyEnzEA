@@ -1,0 +1,33 @@
+ 警告メッセージ: 
+ パッケージ ‘cowplot’ はバージョン 4.3.3 の R の下で造られました  
+
+ 次のパッケージを付け加えます: ‘igraph’ 
+
+ 以下のオブジェクトは ‘package:stats’ からマスクされています:
+
+    decompose, spectrum
+
+ 以下のオブジェクトは ‘package:base’ からマスクされています:
+
+    union
+
+
+ 次のパッケージを付け加えます: ‘dplyr’ 
+
+ 以下のオブジェクトは ‘package:igraph’ からマスクされています:
+
+    as_data_frame, groups, union
+
+ 以下のオブジェクトは ‘package:stats’ からマスクされています:
+
+    filter, lag
+
+ 以下のオブジェクトは ‘package:base’ からマスクされています:
+
+    intersect, setdiff, setequal, union
+
+ 警告メッセージ: 
+ パッケージ ‘readxl’ はバージョン 4.3.3 の R の下で造られました  
+ res_clean[, m, drop = FALSE] でエラー:  添え字が許される範囲外です 
+ 呼び出し:  stopifnot -> vapply -> FUN -> apply
+ 実行が停止されました 

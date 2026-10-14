@@ -1,0 +1,9 @@
+
+observed MGAT3 ES = -0.937 (set size 7)
+Null A  score-permutation (random 7-glycan sets) : p = 0.0006
+Null B  enzyme-label permutation [reviewer (1)]   : p = 0.0625  (MGAT3 rank 1 / 16 enzyme groups)
+Null C  curveball degree-preserving [reviewer (2)]: p = 0.0010
+null device 
+          1 
+
+WROTE output/FigureS_three_null_MGAT3.pdf / .tsv

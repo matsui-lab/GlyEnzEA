@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="700" height="500" viewBox="-650 -50 700 500">
+<path d="M0,237.5 L-100,237.5" stroke-width="4" stroke="#000"/>
+<path d="M-100,237.5 L-200,237.5" stroke-width="4" stroke="#000"/>
+<path d="M-200,237.5 L-300,125.0" stroke-width="4" stroke="#000"/>
+<path d="M-300,125.0 L-400,50.0" stroke-width="4" stroke="#000"/>
+<path d="M-400,50.0 L-500,0" stroke-width="4" stroke="#000"/>
+<path d="M-400,50.0 L-500,100" stroke-width="4" stroke="#000"/>
+<path d="M-300,125.0 L-400,200.0" stroke-width="4" stroke="#000"/>
+<path d="M-400,200.0 L-500,200" stroke-width="4" stroke="#000"/>
+<path d="M-200,237.5 L-300,350.0" stroke-width="4" stroke="#000"/>
+<path d="M-300,350.0 L-400,350.0" stroke-width="4" stroke="#000"/>
+<path d="M-400,350.0 L-500,300.0" stroke-width="4" stroke="#000"/>
+<path d="M-500,300.0 L-600,300" stroke-width="4" stroke="#000"/>
+<path d="M-400,350.0 L-500,400" stroke-width="4" stroke="#000"/>
+<path d="M0,237.5 L0,337.5" stroke-width="4" stroke="#000"/>
+<rect x="-25" y="212.5" width="50" height="50" fill="#0385AE" stroke-width="2" stroke="#000"/>
+<rect x="-125" y="212.5" width="50" height="50" fill="#0385AE" stroke-width="2" stroke="#000"/>
+<circle cx="-200" cy="237.5" r="25" fill="#058F60" stroke-width="2" stroke="#000"/>
+<circle cx="-300" cy="125.0" r="25" fill="#058F60" stroke-width="2" stroke="#000"/>
+<rect x="-425" y="25.0" width="50" height="50" fill="#0385AE" stroke-width="2" stroke="#000"/>
+<polygon points="-500,-27 -473,22 -527,22" fill="#C23537" stroke-width="2" stroke="#000"/>
+<circle cx="-500" cy="100" r="25" fill="#FCC326" stroke-width="2" stroke="#000"/>
+<rect x="-425" y="175.0" width="50" height="50" fill="#0385AE" stroke-width="2" stroke="#000"/>
+<circle cx="-500" cy="200" r="25" fill="#FCC326" stroke-width="2" stroke="#000"/>
+<circle cx="-300" cy="350.0" r="25" fill="#058F60" stroke-width="2" stroke="#000"/>
+<rect x="-425" y="325.0" width="50" height="50" fill="#0385AE" stroke-width="2" stroke="#000"/>
+<circle cx="-500" cy="300.0" r="25" fill="#FCC326" stroke-width="2" stroke="#000"/>
+<polygon points="-600,273 -573,322 -627,322" fill="#C23537" stroke-width="2" stroke="#000"/>
+<polygon points="-500,373 -473,422 -527,422" fill="#C23537" stroke-width="2" stroke="#000"/>
+<polygon points="0,310.5 27,359.5 -27,359.5" fill="#C23537" stroke-width="2" stroke="#000"/>
+</svg>

@@ -1,0 +1,166 @@
+note: "version 2" Tectonic command-line interface activated
+note: Running TeX ...
+warning: algorithm.sty:11: 
+Invalid UTF-8 byte or sequence at line 11 replaced by U+FFFD.
+warning: oup-authoring-template.cls:3206: 
+runsystem(texcount -total -inc GlyEnzEA_v7.tex > wordcount.txt)...disabled.
+warning: anyfontsize.sty:3: 
+Invalid UTF-8 byte or sequence at line 3 replaced by U+FFFD.
+warning: anyfontsize.sty:3: Invalid UTF-8 byte or sequence at line 3 replaced by U+FFFD.
+warning: GlyEnzEA_v7.tex:30: Underfull \hbox (badness 1348) in paragraph at lines 29--30
+warning: GlyEnzEA_v7.tex:30: Underfull \hbox (badness 1383) in paragraph at lines 29--30
+warning: GlyEnzEA_v7.tex:30: Underfull \vbox (badness 10000) has occurred while \output is active
+warning: GlyEnzEA_v7.tex:34: Underfull \hbox (badness 2653) in paragraph at lines 33--34
+warning: GlyEnzEA_v7.tex:34: Underfull \vbox (badness 10000) has occurred while \output is active
+warning: GlyEnzEA_v7.tex:34: Overfull \hbox (11.38107pt too wide) has occurred while \output is active
+warning: GlyEnzEA_v7.tex:38: Underfull \hbox (badness 1163) in paragraph at lines 37--38
+warning: GlyEnzEA_v7.tex:41: Underfull \vbox (badness 10000) has occurred while \output is active
+warning: GlyEnzEA_v7.tex:48: Underfull \hbox (badness 1092) in paragraph at lines 47--48
+warning: GlyEnzEA_v7.tex:50: Underfull \hbox (badness 2126) in paragraph at lines 49--50
+warning: GlyEnzEA_v7.tex:50: Underfull \hbox (badness 1448) in paragraph at lines 49--50
+warning: GlyEnzEA_v7.tex:54: Underfull \hbox (badness 1796) in paragraph at lines 53--54
+warning: GlyEnzEA_v7.tex:54: Underfull \hbox (badness 1924) in paragraph at lines 53--54
+warning: GlyEnzEA_v7.tex:54: Underfull \hbox (badness 4441) in paragraph at lines 53--54
+warning: GlyEnzEA_v7.tex:62: Underfull \hbox (badness 4505) in paragraph at lines 61--62
+warning: GlyEnzEA_v7.tex:62: Underfull \hbox (badness 1960) in paragraph at lines 61--62
+warning: GlyEnzEA_v7.tex:64: Underfull \hbox (badness 2591) in paragraph at lines 63--64
+warning: GlyEnzEA_v7.tex:68: Underfull \hbox (badness 1721) in paragraph at lines 67--68
+warning: GlyEnzEA_v7.tex:70: Underfull \hbox (badness 1655) in paragraph at lines 69--70
+warning: GlyEnzEA_v7.tex:74: Underfull \hbox (badness 1320) in paragraph at lines 73--74
+warning: GlyEnzEA_v7.tex:74: Underfull \hbox (badness 2828) in paragraph at lines 73--74
+warning: GlyEnzEA_v7.tex:80: Underfull \hbox (badness 2035) in paragraph at lines 79--80
+warning: GlyEnzEA_v7.tex:87: Underfull \hbox (badness 1242) in paragraph at lines 86--87
+warning: GlyEnzEA_v7.tex:98: Underfull \vbox (badness 10000) has occurred while \output is active
+warning: GlyEnzEA_v7.tex:104: Underfull \hbox (badness 1292) in paragraph at lines 103--104
+warning: GlyEnzEA_v7.tex:109: Underfull \hbox (badness 1371) in paragraph at lines 108--109
+warning: GlyEnzEA_v7.tex:109: Underfull \vbox (badness 10000) has occurred while \output is active
+warning: GlyEnzEA_v7.tex:113: Underfull \hbox (badness 7133) in paragraph at lines 112--113
+warning: GlyEnzEA_v7.tex:113: Underfull \vbox (badness 10000) has occurred while \output is active
+warning: GlyEnzEA_v7.tex:117: Underfull \hbox (badness 1400) in paragraph at lines 116--117
+warning: GlyEnzEA_v7.tex:119: Underfull \hbox (badness 1748) in paragraph at lines 118--119
+warning: GlyEnzEA_v7.tex:119: Underfull \hbox (badness 4846) in paragraph at lines 118--119
+warning: GlyEnzEA_v7.tex:121: Underfull \hbox (badness 2452) in paragraph at lines 120--121
+warning: GlyEnzEA_v7.tex:123: Underfull \hbox (badness 1270) in paragraph at lines 122--123
+warning: GlyEnzEA_v7.tex:123: Underfull \hbox (badness 4967) in paragraph at lines 122--123
+warning: GlyEnzEA_v7.tex:123: Underfull \hbox (badness 1577) in paragraph at lines 122--123
+warning: GlyEnzEA_v7.tex:125: Underfull \hbox (badness 1721) in paragraph at lines 124--125
+warning: GlyEnzEA_v7.tex:130: Underfull \hbox (badness 1348) in paragraph at lines 129--130
+warning: GlyEnzEA_v7.tex:132: Underfull \hbox (badness 5563) in paragraph at lines 131--132
+warning: GlyEnzEA_v7.tex:134: Underfull \hbox (badness 5274) in paragraph at lines 133--134
+warning: GlyEnzEA_v7.tex:135: Underfull \hbox (badness 3635) in paragraph at lines 134--135
+warning: GlyEnzEA_v7.tex:135: Underfull \hbox (badness 1286) in paragraph at lines 134--135
+warning: GlyEnzEA_v7.tex:141: Underfull \hbox (badness 1173) in paragraph at lines 140--141
+warning: GlyEnzEA_v7.tex:141: Underfull \hbox (badness 1348) in paragraph at lines 140--141
+warning: GlyEnzEA_v7.tex:142: Underfull \hbox (badness 3861) in paragraph at lines 141--142
+warning: GlyEnzEA_v7.tex:144: Underfull \hbox (badness 1331) in paragraph at lines 143--144
+warning: GlyEnzEA_v7.tex:144: Underfull \hbox (badness 2384) in paragraph at lines 143--144
+warning: GlyEnzEA_v7.tex:145: Underfull \hbox (badness 1137) in paragraph at lines 144--145
+note: Rerunning TeX because "GlyEnzEA_v7.out" changed ...
+warning: algorithm.sty:11: 
+Invalid UTF-8 byte or sequence at line 11 replaced by U+FFFD.
+warning: oup-authoring-template.cls:3206: 
+runsystem(texcount -total -inc GlyEnzEA_v7.tex > wordcount.txt)...disabled.
+warning: anyfontsize.sty:3: 
+Invalid UTF-8 byte or sequence at line 3 replaced by U+FFFD.
+warning: anyfontsize.sty:3: Invalid UTF-8 byte or sequence at line 3 replaced by U+FFFD.
+warning: GlyEnzEA_v7.tex:30: Underfull \hbox (badness 1348) in paragraph at lines 29--30
+warning: GlyEnzEA_v7.tex:30: Underfull \hbox (badness 1383) in paragraph at lines 29--30
+warning: GlyEnzEA_v7.tex:30: Underfull \vbox (badness 10000) has occurred while \output is active
+warning: GlyEnzEA_v7.tex:34: Underfull \hbox (badness 2653) in paragraph at lines 33--34
+warning: GlyEnzEA_v7.tex:34: Underfull \vbox (badness 10000) has occurred while \output is active
+warning: GlyEnzEA_v7.tex:34: Overfull \hbox (11.38107pt too wide) has occurred while \output is active
+warning: GlyEnzEA_v7.tex:38: Underfull \hbox (badness 1163) in paragraph at lines 37--38
+warning: GlyEnzEA_v7.tex:41: Underfull \vbox (badness 10000) has occurred while \output is active
+warning: GlyEnzEA_v7.tex:48: Underfull \hbox (badness 1092) in paragraph at lines 47--48
+warning: GlyEnzEA_v7.tex:50: Underfull \hbox (badness 2126) in paragraph at lines 49--50
+warning: GlyEnzEA_v7.tex:50: Underfull \hbox (badness 1448) in paragraph at lines 49--50
+warning: GlyEnzEA_v7.tex:54: Underfull \hbox (badness 1796) in paragraph at lines 53--54
+warning: GlyEnzEA_v7.tex:54: Underfull \hbox (badness 1924) in paragraph at lines 53--54
+warning: GlyEnzEA_v7.tex:54: Underfull \hbox (badness 4441) in paragraph at lines 53--54
+warning: GlyEnzEA_v7.tex:62: Underfull \hbox (badness 4505) in paragraph at lines 61--62
+warning: GlyEnzEA_v7.tex:62: Underfull \hbox (badness 1960) in paragraph at lines 61--62
+warning: GlyEnzEA_v7.tex:64: Underfull \hbox (badness 2591) in paragraph at lines 63--64
+warning: GlyEnzEA_v7.tex:68: Underfull \hbox (badness 1721) in paragraph at lines 67--68
+warning: GlyEnzEA_v7.tex:70: Underfull \hbox (badness 1655) in paragraph at lines 69--70
+warning: GlyEnzEA_v7.tex:74: Underfull \hbox (badness 1320) in paragraph at lines 73--74
+warning: GlyEnzEA_v7.tex:74: Underfull \hbox (badness 2828) in paragraph at lines 73--74
+warning: GlyEnzEA_v7.tex:80: Underfull \hbox (badness 2035) in paragraph at lines 79--80
+warning: GlyEnzEA_v7.tex:87: Underfull \hbox (badness 1242) in paragraph at lines 86--87
+warning: GlyEnzEA_v7.tex:98: Underfull \vbox (badness 10000) has occurred while \output is active
+warning: GlyEnzEA_v7.tex:104: Underfull \hbox (badness 1292) in paragraph at lines 103--104
+warning: GlyEnzEA_v7.tex:109: Underfull \hbox (badness 1371) in paragraph at lines 108--109
+warning: GlyEnzEA_v7.tex:109: Underfull \vbox (badness 10000) has occurred while \output is active
+warning: GlyEnzEA_v7.tex:113: Underfull \hbox (badness 7133) in paragraph at lines 112--113
+warning: GlyEnzEA_v7.tex:113: Underfull \vbox (badness 10000) has occurred while \output is active
+warning: GlyEnzEA_v7.tex:117: Underfull \hbox (badness 1400) in paragraph at lines 116--117
+warning: GlyEnzEA_v7.tex:119: Underfull \hbox (badness 1748) in paragraph at lines 118--119
+warning: GlyEnzEA_v7.tex:119: Underfull \hbox (badness 4846) in paragraph at lines 118--119
+warning: GlyEnzEA_v7.tex:121: Underfull \hbox (badness 2452) in paragraph at lines 120--121
+warning: GlyEnzEA_v7.tex:123: Underfull \hbox (badness 1270) in paragraph at lines 122--123
+warning: GlyEnzEA_v7.tex:123: Underfull \hbox (badness 4967) in paragraph at lines 122--123
+warning: GlyEnzEA_v7.tex:123: Underfull \hbox (badness 1577) in paragraph at lines 122--123
+warning: GlyEnzEA_v7.tex:125: Underfull \hbox (badness 1721) in paragraph at lines 124--125
+warning: GlyEnzEA_v7.tex:130: Underfull \hbox (badness 1348) in paragraph at lines 129--130
+warning: GlyEnzEA_v7.tex:132: Underfull \hbox (badness 5563) in paragraph at lines 131--132
+warning: GlyEnzEA_v7.tex:134: Underfull \hbox (badness 5274) in paragraph at lines 133--134
+warning: GlyEnzEA_v7.tex:135: Underfull \hbox (badness 3635) in paragraph at lines 134--135
+warning: GlyEnzEA_v7.tex:135: Underfull \hbox (badness 1286) in paragraph at lines 134--135
+warning: GlyEnzEA_v7.tex:141: Underfull \hbox (badness 1173) in paragraph at lines 140--141
+warning: GlyEnzEA_v7.tex:141: Underfull \hbox (badness 1348) in paragraph at lines 140--141
+warning: GlyEnzEA_v7.tex:142: Underfull \hbox (badness 3861) in paragraph at lines 141--142
+warning: GlyEnzEA_v7.tex:144: Underfull \hbox (badness 1331) in paragraph at lines 143--144
+warning: GlyEnzEA_v7.tex:144: Underfull \hbox (badness 2384) in paragraph at lines 143--144
+warning: GlyEnzEA_v7.tex:145: Underfull \hbox (badness 1137) in paragraph at lines 144--145
+warning: warnings were issued by the TeX engine; use --print and/or --keep-logs for details.
+note: Running xdvipdfmx ...
+warning: Unknown PDF object type.
+warning: Could not find a valid object in array object.
+warning: Interpreting PS code failed!!! Output might be broken!!!
+warning: Interpreting special command ps: (ps:) failed.
+warning: >> at page="1" position="(72, 710.362)" (in PDF)
+warning: >> xxx "ps: [{ThisPage} << /CropBox [0 0 595.82918 782.7922] >> /PUT..."
+warning: >> Reading special command stopped around >>[{ThisPage} << /CropBox [0 0 595.82918 782.7922] >> /PUT pdf...<<
+warning: Unknown PDF object type.
+warning: Could not find a valid object in array object.
+warning: Interpreting PS code failed!!! Output might be broken!!!
+warning: Interpreting special command ps: (ps:) failed.
+warning: >> at page="2" position="(72, 710.362)" (in PDF)
+warning: >> xxx "ps: [{ThisPage} << /CropBox [0 0 595.82918 782.7922] >> /PUT..."
+warning: >> Reading special command stopped around >>[{ThisPage} << /CropBox [0 0 595.82918 782.7922] >> /PUT pdf...<<
+warning: Unknown PDF object type.
+warning: Could not find a valid object in array object.
+warning: Interpreting PS code failed!!! Output might be broken!!!
+warning: Interpreting special command ps: (ps:) failed.
+warning: >> at page="3" position="(72, 710.362)" (in PDF)
+warning: >> xxx "ps: [{ThisPage} << /CropBox [0 0 595.82918 782.7922] >> /PUT..."
+warning: >> Reading special command stopped around >>[{ThisPage} << /CropBox [0 0 595.82918 782.7922] >> /PUT pdf...<<
+warning: Unknown PDF object type.
+warning: Could not find a valid object in array object.
+warning: Interpreting PS code failed!!! Output might be broken!!!
+warning: Interpreting special command ps: (ps:) failed.
+warning: >> at page="4" position="(72, 710.362)" (in PDF)
+warning: >> xxx "ps: [{ThisPage} << /CropBox [0 0 595.82918 782.7922] >> /PUT..."
+warning: >> Reading special command stopped around >>[{ThisPage} << /CropBox [0 0 595.82918 782.7922] >> /PUT pdf...<<
+warning: Unknown PDF object type.
+warning: Could not find a valid object in array object.
+warning: Interpreting PS code failed!!! Output might be broken!!!
+warning: Interpreting special command ps: (ps:) failed.
+warning: >> at page="5" position="(72, 710.362)" (in PDF)
+warning: >> xxx "ps: [{ThisPage} << /CropBox [0 0 595.82918 782.7922] >> /PUT..."
+warning: >> Reading special command stopped around >>[{ThisPage} << /CropBox [0 0 595.82918 782.7922] >> /PUT pdf...<<
+warning: Unknown PDF object type.
+warning: Could not find a valid object in array object.
+warning: Interpreting PS code failed!!! Output might be broken!!!
+warning: Interpreting special command ps: (ps:) failed.
+warning: >> at page="6" position="(72, 710.362)" (in PDF)
+warning: >> xxx "ps: [{ThisPage} << /CropBox [0 0 595.82918 782.7922] >> /PUT..."
+warning: >> Reading special command stopped around >>[{ThisPage} << /CropBox [0 0 595.82918 782.7922] >> /PUT pdf...<<
+warning: Unknown PDF object type.
+warning: Could not find a valid object in array object.
+warning: Interpreting PS code failed!!! Output might be broken!!!
+warning: Interpreting special command ps: (ps:) failed.
+warning: >> at page="7" position="(72, 710.362)" (in PDF)
+warning: >> xxx "ps: [{ThisPage} << /CropBox [0 0 595.82918 782.7922] >> /PUT..."
+warning: >> Reading special command stopped around >>[{ThisPage} << /CropBox [0 0 595.82918 782.7922] >> /PUT pdf...<<
+note: Writing `GlyEnzEA_v7.pdf` (3.5408735275268555 MiB)
+note: Skipped writing 2 intermediate files (use --keep-intermediates to keep them)

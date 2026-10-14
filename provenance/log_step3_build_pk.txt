@@ -1,0 +1,982 @@
+
+ 次のパッケージを付け加えます: ‘dplyr’ 
+
+ 以下のオブジェクトは ‘package:stats’ からマスクされています:
+
+    filter, lag
+
+ 以下のオブジェクトは ‘package:base’ からマスクされています:
+
+    intersect, setdiff, setequal, union
+
+Please cite our software :) 
+ 
+ Sehyun Oh et al. HGNChelper: identification and correction of invalid gene symbols for human and mouse. F1000Research 2020, 9:1493. DOI: https://doi.org/10.12688/f1000research.28033.1 
+ 
+ Type `citation('HGNChelper')` for a BibTeX entry.
+ 警告メッセージ: 
+ パッケージ ‘HGNChelper’ はバージョン 4.3.3 の R の下で造られました  
+ 要求されたパッケージ BiocGenerics をロード中です 
+
+ 次のパッケージを付け加えます: ‘BiocGenerics’ 
+
+ 以下のオブジェクトは ‘package:dplyr’ からマスクされています:
+
+    combine, intersect, setdiff, union
+
+ 以下のオブジェクトは ‘package:stats’ からマスクされています:
+
+    IQR, mad, sd, var, xtabs
+
+ 以下のオブジェクトは ‘package:base’ からマスクされています:
+
+    anyDuplicated, aperm, append, as.data.frame, basename, cbind,
+    colnames, dirname, do.call, duplicated, eval, evalq, Filter, Find,
+    get, grep, grepl, intersect, is.unsorted, lapply, Map, mapply,
+    match, mget, order, paste, pmax, pmax.int, pmin, pmin.int,
+    Position, rank, rbind, Reduce, rownames, sapply, setdiff, sort,
+    table, tapply, union, unique, unsplit, which.max, which.min
+
+ 要求されたパッケージ RSQLite をロード中です 
+
+ 次のパッケージを付け加えます: ‘igraph’ 
+
+ 以下のオブジェクトは ‘package:BiocGenerics’ からマスクされています:
+
+    normalize, path, union
+
+ 以下のオブジェクトは ‘package:dplyr’ からマスクされています:
+
+    as_data_frame, groups, union
+
+ 以下のオブジェクトは ‘package:stats’ からマスクされています:
+
+    decompose, spectrum
+
+ 以下のオブジェクトは ‘package:base’ からマスクされています:
+
+    union
+
+ 警告メッセージ: 
+ パッケージ ‘readxl’ はバージョン 4.3.3 の R の下で造られました  
+  Enzyme_gene
+1         ABO
+2         ABO
+3        ALG1
+4       ALG10
+5      ALG10B
+6       ALG11
+                                                                 Reactant
+1                                                              (Gal(Fuc))
+2                                                              (Gal(Fuc))
+3                                                        (GlcNAc(GlcNAc))
+4 (GlcNAc(GlcNAc(Man(Man(Man(Man))(Man(Man)))(Man(Man(Man(Glc(Glc))))))))
+5 (GlcNAc(GlcNAc(Man(Man(Man(Man))(Man(Man)))(Man(Man(Man(Glc(Glc))))))))
+6                                         (GlcNAc(GlcNAc(Man(Man)(Man))))
+                                                                       Product
+1                                                           (Gal(Fuc(GalNAc)))
+2                                                              (Gal(Fuc(Gal)))
+3                                                        (GlcNAc(GlcNAc(Man)))
+4 (GlcNAc(GlcNAc(Man(Man(Man(Man(Glc(Glc(Glc))))))(Man(Man(Man))(Man(Man))))))
+5 (GlcNAc(GlcNAc(Man(Man(Man(Man(Glc(Glc(Glc))))))(Man(Man(Man))(Man(Man))))))
+6                                         (GlcNAc(GlcNAc(Man(Man(Man))(Man))))
+         Enzyme_class   ENZdbID
+1 Glycosyltransferase GENZ00001
+2 Glycosyltransferase GENZ00002
+3 Glycosyltransferase GENZ00003
+4 Glycosyltransferase GENZ00004
+5 Glycosyltransferase GENZ00005
+6 Glycosyltransferase GENZ00006
+  Enzyme                        Reactant                              Product
+1 P19526 (GalNAc(Gal(Fuc))(GlcNAc(Gal))) (GalNAc(GlcNAc(Gal(Fuc)))(Gal(Fuc)))
+2 Q10981 (GalNAc(Gal(Fuc))(GlcNAc(Gal))) (GalNAc(GlcNAc(Gal(Fuc)))(Gal(Fuc)))
+3 O43286      (GalNAc(Gal(Fuc))(GlcNAc))      (GalNAc(Gal(Fuc))(GlcNAc(Gal)))
+4 O60512      (GalNAc(Gal(Fuc))(GlcNAc))      (GalNAc(Gal(Fuc))(GlcNAc(Gal)))
+5 O60513      (GalNAc(Gal(Fuc))(GlcNAc))      (GalNAc(Gal(Fuc))(GlcNAc(Gal)))
+6 O60909      (GalNAc(Gal(Fuc))(GlcNAc))      (GalNAc(Gal(Fuc))(GlcNAc(Gal)))
+  Enzyme_gene                                 Enzyme_class  GlyGendbID
+1        FUT1 Galactoside alpha-(1,2)-fucosyltransferase 1 GLYGEN00001
+2        FUT2 Galactoside alpha-(1,2)-fucosyltransferase 2 GLYGEN00002
+3     B4GALT5             Beta-1,4-galactosyltransferase 5 GLYGEN00003
+4     B4GALT3             Beta-1,4-galactosyltransferase 3 GLYGEN00004
+5     B4GALT4             Beta-1,4-galactosyltransferase 4 GLYGEN00005
+6     B4GALT2             Beta-1,4-galactosyltransferase 2 GLYGEN00006
+# A tibble: 6 × 5
+  glycanComp                                    toposeq     diff  group    logFC
+  <chr>                                         <chr>       <chr> <chr>    <dbl>
+1 GlcNAc(2)Man(3)HexNAc(0)Hex(3)Fuc(0)Neu5Ac(0) (GlcNAc(Gl… cont… 1     -0.0451 
+2 GlcNAc(2)Man(3)HexNAc(0)Hex(3)Fuc(0)Neu5Ac(0) (GlcNAc(Gl… cont… 1     -0.0451 
+3 GlcNAc(2)Man(3)HexNAc(0)Hex(3)Fuc(0)Neu5Ac(0) (GlcNAc(Gl… cont… 1     -0.0451 
+4 GlcNAc(2)Man(3)HexNAc(0)Hex(3)Fuc(0)Neu5Ac(0) (GlcNAc(Gl… cont… 1     -0.0451 
+5 GlcNAc(2)Man(3)HexNAc(0)Hex(4)Fuc(0)Neu5Ac(0) (GlcNAc(Gl… cont… 2ab   -0.00483
+6 GlcNAc(2)Man(3)HexNAc(0)Hex(4)Fuc(0)Neu5Ac(0) (GlcNAc(Gl… cont… 2ab   -0.00483
+Maps last updated on: Sat Nov 16 10:35:32 2024
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1] 2328    5
+  Enzyme_gene
+1         ABO
+2         ABO
+3        ALG1
+4       ALG10
+5      ALG10B
+6       ALG11
+                                                                 Reactant
+1                                                              (Gal(Fuc))
+2                                                              (Gal(Fuc))
+3                                                        (GlcNAc(GlcNAc))
+4 (GlcNAc(GlcNAc(Man(Man(Man(Man))(Man(Man)))(Man(Man(Man(Glc(Glc))))))))
+5 (GlcNAc(GlcNAc(Man(Man(Man(Man))(Man(Man)))(Man(Man(Man(Glc(Glc))))))))
+6                                         (GlcNAc(GlcNAc(Man(Man)(Man))))
+                                                                       Product
+1                                                           (Gal(Fuc(GalNAc)))
+2                                                              (Gal(Fuc(Gal)))
+3                                                        (GlcNAc(GlcNAc(Man)))
+4 (GlcNAc(GlcNAc(Man(Man(Man(Man(Glc(Glc(Glc))))))(Man(Man(Man))(Man(Man))))))
+5 (GlcNAc(GlcNAc(Man(Man(Man(Man(Glc(Glc(Glc))))))(Man(Man(Man))(Man(Man))))))
+6                                         (GlcNAc(GlcNAc(Man(Man(Man))(Man))))
+         Enzyme_class      dbID
+1 Glycosyltransferase GENZ00001
+2 Glycosyltransferase GENZ00002
+3 Glycosyltransferase GENZ00003
+4 Glycosyltransferase GENZ00004
+5 Glycosyltransferase GENZ00005
+6 Glycosyltransferase GENZ00006
+       (GlcNAc(GlcNAc(Man(Man(Man)(Man))(Man(Man)))))
+ABO                                             FALSE
+ABO                                             FALSE
+ALG1                                             TRUE
+ALG10                                           FALSE
+ALG10B                                          FALSE
+       (GlcNAc(GlcNAc(Man(Man(Man(Man)))(Man(Man)))))
+ABO                                             FALSE
+ABO                                             FALSE
+ALG1                                             TRUE
+ALG10                                           FALSE
+ALG10B                                          FALSE
+       (GlcNAc(GlcNAc(Man(Man(Man(Man))(Man))(Man))))
+ABO                                             FALSE
+ABO                                             FALSE
+ALG1                                             TRUE
+ALG10                                           FALSE
+ALG10B                                          FALSE
+       (GlcNAc(GlcNAc(Man(Man(Man(Man)(Man)))(Man))))
+ABO                                             FALSE
+ABO                                             FALSE
+ALG1                                             TRUE
+ALG10                                           FALSE
+ALG10B                                          FALSE
+       (GlcNAc(GlcNAc(Man(Man(Man(Man))(Man))(Man(Man)))))
+ABO                                                  FALSE
+ABO                                                  FALSE
+ALG1                                                  TRUE
+ALG10                                                FALSE
+ALG10B                                               FALSE
+       (GlcNAc(GlcNAc(Man(Man(Man)(Man))(Man(Man)))))
+ABO                                             FALSE
+ABO                                             FALSE
+ALG1                                             TRUE
+ALG10                                           FALSE
+ALG10B                                          FALSE
+       (GlcNAc(GlcNAc(Man(Man(Man(Man)))(Man(Man)))))
+ABO                                             FALSE
+ABO                                             FALSE
+ALG1                                             TRUE
+ALG10                                           FALSE
+ALG10B                                          FALSE
+       (GlcNAc(GlcNAc(Man(Man(Man(Man))(Man))(Man))))
+ABO                                             FALSE
+ABO                                             FALSE
+ALG1                                             TRUE
+ALG10                                           FALSE
+ALG10B                                          FALSE
+       (GlcNAc(GlcNAc(Man(Man(Man(Man)(Man)))(Man))))
+ABO                                             FALSE
+ABO                                             FALSE
+ALG1                                             TRUE
+ALG10                                           FALSE
+ALG10B                                          FALSE
+       (GlcNAc(GlcNAc(Man(Man(Man(Man))(Man))(Man(Man)))))
+ABO                                                  FALSE
+ABO                                                  FALSE
+ALG1                                                  TRUE
+ALG10                                                FALSE
+ALG10B                                               FALSE
+[1] TRUE
+       (GlcNAc(GlcNAc(Man(Man(Man)(Man))(Man(Man)))))
+ABO                                             FALSE
+ABO                                             FALSE
+ALG1                                             TRUE
+ALG10                                           FALSE
+ALG10B                                          FALSE
+       (GlcNAc(GlcNAc(Man(Man(Man(Man)))(Man(Man)))))
+ABO                                             FALSE
+ABO                                             FALSE
+ALG1                                             TRUE
+ALG10                                           FALSE
+ALG10B                                          FALSE
+       (GlcNAc(GlcNAc(Man(Man(Man(Man))(Man))(Man))))
+ABO                                             FALSE
+ABO                                             FALSE
+ALG1                                             TRUE
+ALG10                                           FALSE
+ALG10B                                          FALSE
+       (GlcNAc(GlcNAc(Man(Man(Man(Man)(Man)))(Man))))
+ABO                                             FALSE
+ABO                                             FALSE
+ALG1                                             TRUE
+ALG10                                           FALSE
+ALG10B                                          FALSE
+       (GlcNAc(GlcNAc(Man(Man(Man(Man))(Man))(Man(Man)))))
+ABO                                                  FALSE
+ABO                                                  FALSE
+ALG1                                                  TRUE
+ALG10                                                FALSE
+ALG10B                                               FALSE
+[1] 93 97
+       (GlcNAc(GlcNAc(Man(Man(Man)(Man))(Man(Man)))))
+ABO                                             FALSE
+ALG1                                             TRUE
+ALG10                                           FALSE
+ALG10B                                          FALSE
+ALG11                                            TRUE
+ALG12                                            TRUE
+       (GlcNAc(GlcNAc(Man(Man(Man(Man)))(Man(Man)))))
+ABO                                             FALSE
+ALG1                                             TRUE
+ALG10                                           FALSE
+ALG10B                                          FALSE
+ALG11                                            TRUE
+ALG12                                            TRUE
+       (GlcNAc(GlcNAc(Man(Man(Man(Man))(Man))(Man))))
+ABO                                             FALSE
+ALG1                                             TRUE
+ALG10                                           FALSE
+ALG10B                                          FALSE
+ALG11                                            TRUE
+ALG12                                            TRUE
+       (GlcNAc(GlcNAc(Man(Man(Man(Man)(Man)))(Man))))
+ABO                                             FALSE
+ALG1                                             TRUE
+ALG10                                           FALSE
+ALG10B                                          FALSE
+ALG11                                            TRUE
+ALG12                                            TRUE
+       (GlcNAc(GlcNAc(Man(Man(Man(Man))(Man))(Man(Man)))))
+ABO                                                  FALSE
+ALG1                                                  TRUE
+ALG10                                                FALSE
+ALG10B                                               FALSE
+ALG11                                                 TRUE
+ALG12                                                 TRUE
+       (GlcNAc(GlcNAc(Man(Man(Man)(Man))(Man(Man(Man))))))
+ABO                                                  FALSE
+ALG1                                                  TRUE
+ALG10                                                FALSE
+ALG10B                                               FALSE
+ALG11                                                 TRUE
+ALG12                                                 TRUE
+       (GlcNAc(GlcNAc(Man(Man(Man(Man))(Man(Man)))(Man))))
+ABO                                                  FALSE
+ALG1                                                  TRUE
+ALG10                                                FALSE
+ALG10B                                               FALSE
+ALG11                                                 TRUE
+ALG12                                                 TRUE
+       (GlcNAc(GlcNAc(Man(Man(Man(Man)))(Man(Man(Man))))))
+ABO                                                  FALSE
+ALG1                                                  TRUE
+ALG10                                                FALSE
+ALG10B                                               FALSE
+ALG11                                                 TRUE
+ALG12                                                 TRUE
+       (GlcNAc(GlcNAc(Man(Man(Man(Man(Man)))(Man))(Man))))
+ABO                                                  FALSE
+ALG1                                                  TRUE
+ALG10                                                FALSE
+ALG10B                                               FALSE
+ALG11                                                 TRUE
+ALG12                                                 TRUE
+       (GlcNAc(GlcNAc(Man(Man(Man)(Man))(Man(Man)(Man)))))
+ABO                                                  FALSE
+ALG1                                                  TRUE
+ALG10                                                FALSE
+ALG10B                                               FALSE
+ALG11                                                 TRUE
+ALG12                                                 TRUE
+       (GlcNAc(GlcNAc(Man(Man(Man(Man(Man(Man)))))(Man))))
+ABO                                                  FALSE
+ALG1                                                  TRUE
+ALG10                                                FALSE
+ALG10B                                               FALSE
+ALG11                                                 TRUE
+ALG12                                                 TRUE
+       (GlcNAc(GlcNAc(Man(Man(Man(Man))(Man))(Man(Man(Man))))))
+ABO                                                       FALSE
+ALG1                                                       TRUE
+ALG10                                                     FALSE
+ALG10B                                                    FALSE
+ALG11                                                      TRUE
+ALG12                                                      TRUE
+       (GlcNAc(GlcNAc(Man(Man(Man(Man))(Man(Man)))(Man(Man)))))
+ABO                                                       FALSE
+ALG1                                                       TRUE
+ALG10                                                     FALSE
+ALG10B                                                    FALSE
+ALG11                                                      TRUE
+ALG12                                                      TRUE
+       (GlcNAc(GlcNAc(Man(Man(Man(Man(Man(Man))))(Man))(Man))))
+ABO                                                       FALSE
+ALG1                                                       TRUE
+ALG10                                                     FALSE
+ALG10B                                                    FALSE
+ALG11                                                      TRUE
+ALG12                                                      TRUE
+       (GlcNAc(GlcNAc(Man(Man(Man(Man))(Man))(Man(Man)(Man)))))
+ABO                                                       FALSE
+ALG1                                                       TRUE
+ALG10                                                     FALSE
+ALG10B                                                    FALSE
+ALG11                                                      TRUE
+ALG12                                                      TRUE
+       (GlcNAc(GlcNAc(Man(Man(Man(Man(Man)))(Man(Man)))(Man))))
+ABO                                                       FALSE
+ALG1                                                       TRUE
+ALG10                                                     FALSE
+ALG10B                                                    FALSE
+ALG11                                                      TRUE
+ALG12                                                      TRUE
+       (GlcNAc(GlcNAc(Man(Man(Man(Man))(Man(Man)))(Man(Man(Man))))))
+ABO                                                            FALSE
+ALG1                                                            TRUE
+ALG10                                                          FALSE
+ALG10B                                                         FALSE
+ALG11                                                           TRUE
+ALG12                                                           TRUE
+       (GlcNAc(GlcNAc(Man(Man(Man(Man))(Man))(Man(Man(Man))(Man)))))
+ABO                                                            FALSE
+ALG1                                                            TRUE
+ALG10                                                          FALSE
+ALG10B                                                         FALSE
+ALG11                                                           TRUE
+ALG12                                                           TRUE
+       (GlcNAc(GlcNAc(Man(Man(Man(Man(Man)))(Man(Man(Man))))(Man))))
+ABO                                                            FALSE
+ALG1                                                            TRUE
+ALG10                                                          FALSE
+ALG10B                                                         FALSE
+ALG11                                                           TRUE
+ALG12                                                           TRUE
+       (GlcNAc(GlcNAc(Man(Man(Man(Man))(Man))(Man(Man(Man(Man)))))))
+ABO                                                            FALSE
+ALG1                                                            TRUE
+ALG10                                                          FALSE
+ALG10B                                                         FALSE
+ALG11                                                           TRUE
+ALG12                                                           TRUE
+       (GlcNAc(GlcNAc(Man(Man(Man(Man(Man(Man(Man)))))(Man))(Man))))
+ABO                                                            FALSE
+ALG1                                                            TRUE
+ALG10                                                          FALSE
+ALG10B                                                         FALSE
+ALG11                                                           TRUE
+ALG12                                                           TRUE
+       (GlcNAc(GlcNAc(Man(Man(Man(Man(Man)))(Man))(Man(Man)(Man)))))
+ABO                                                            FALSE
+ALG1                                                            TRUE
+ALG10                                                          FALSE
+ALG10B                                                         FALSE
+ALG11                                                           TRUE
+ALG12                                                           TRUE
+       (GlcNAc(GlcNAc(Man(Man(Man(Man(Man(Man)))))(Man(Man(Man))))))
+ABO                                                            FALSE
+ALG1                                                            TRUE
+ALG10                                                          FALSE
+ALG10B                                                         FALSE
+ALG11                                                           TRUE
+ALG12                                                           TRUE
+       (GlcNAc(GlcNAc(Man(Man(Man(Man))(Man(Man)))(Man(Man)(Man)))))
+ABO                                                            FALSE
+ALG1                                                            TRUE
+ALG10                                                          FALSE
+ALG10B                                                         FALSE
+ALG11                                                           TRUE
+ALG12                                                           TRUE
+       (GlcNAc(GlcNAc(Man(Man(Man(Man(Man(Man(Man))))))(Man(Man)))))
+ABO                                                            FALSE
+ALG1                                                            TRUE
+ALG10                                                          FALSE
+ALG10B                                                         FALSE
+ALG11                                                           TRUE
+ALG12                                                           TRUE
+       (GlcNAc(GlcNAc(Man(Man(Man(Man(Man)))(Man(Man)))(Man(Man)))))
+ABO                                                            FALSE
+ALG1                                                            TRUE
+ALG10                                                          FALSE
+ALG10B                                                         FALSE
+ALG11                                                           TRUE
+ALG12                                                           TRUE
+       (GlcNAc(GlcNAc(Man(Man(Man(Man(Man(Man))))(Man))(Man(Man)))))
+ABO                                                            FALSE
+ALG1                                                            TRUE
+ALG10                                                          FALSE
+ALG10B                                                         FALSE
+ALG11                                                           TRUE
+ALG12                                                           TRUE
+       (GlcNAc(GlcNAc(Man(Man(Man(Man(Man(Man)))))(Man(Man)(Man)))))
+ABO                                                            FALSE
+ALG1                                                            TRUE
+ALG10                                                          FALSE
+ALG10B                                                         FALSE
+ALG11                                                           TRUE
+ALG12                                                           TRUE
+       (GlcNAc(GlcNAc(Man(Man(GlcNAc(Fuc)(Gal)))(Man(Man))))(Fuc))
+ABO                                                          FALSE
+ALG1                                                          TRUE
+ALG10                                                        FALSE
+ALG10B                                                       FALSE
+ALG11                                                         TRUE
+ALG12                                                         TRUE
+       (GlcNAc(GlcNAc(Man(Man(GlcNAc(Gal(Fuc))))(Man(Man))))(Fuc))
+ABO                                                          FALSE
+ALG1                                                          TRUE
+ALG10                                                        FALSE
+ALG10B                                                       FALSE
+ALG11                                                         TRUE
+ALG12                                                         TRUE
+       (GlcNAc(GlcNAc(Man(Man(GlcNAc))(GlcNAc)(Man)))(Fuc))
+ABO                                                   FALSE
+ALG1                                                   TRUE
+ALG10                                                 FALSE
+ALG10B                                                FALSE
+ALG11                                                 FALSE
+ALG12                                                 FALSE
+       (GlcNAc(GlcNAc(Man(Man(Man)(Man))(Man(GlcNAc))(GlcNAc))))
+ABO                                                        FALSE
+ALG1                                                        TRUE
+ALG10                                                      FALSE
+ALG10B                                                     FALSE
+ALG11                                                       TRUE
+ALG12                                                       TRUE
+       (GlcNAc(GlcNAc(Man(Man(GlcNAc)(GlcNAc))(Man(Man)(Man)))))
+ABO                                                        FALSE
+ALG1                                                        TRUE
+ALG10                                                      FALSE
+ALG10B                                                     FALSE
+ALG11                                                       TRUE
+ALG12                                                       TRUE
+       (GlcNAc(GlcNAc(Man(Man(GlcNAc(Fuc)(Gal)))(GlcNAc)(Man)))(Fuc))
+ABO                                                             FALSE
+ALG1                                                             TRUE
+ALG10                                                           FALSE
+ALG10B                                                          FALSE
+ALG11                                                           FALSE
+ALG12                                                           FALSE
+       (GlcNAc(GlcNAc(Man(Man(GlcNAc(Fuc)(Gal)))(Man(GlcNAc))))(Fuc))
+ABO                                                             FALSE
+ALG1                                                             TRUE
+ALG10                                                           FALSE
+ALG10B                                                          FALSE
+ALG11                                                           FALSE
+ALG12                                                           FALSE
+       (GlcNAc(GlcNAc(Man(Man(Man)(Man))(Man(GlcNAc))(GlcNAc)))(Fuc))
+ABO                                                             FALSE
+ALG1                                                             TRUE
+ALG10                                                           FALSE
+ALG10B                                                          FALSE
+ALG11                                                            TRUE
+ALG12                                                            TRUE
+       (GlcNAc(GlcNAc(Man(Man(GlcNAc)(GlcNAc))(Man(Man)(Man))))(Fuc))
+ABO                                                             FALSE
+ALG1                                                             TRUE
+ALG10                                                           FALSE
+ALG10B                                                          FALSE
+ALG11                                                            TRUE
+ALG12                                                            TRUE
+       (GlcNAc(GlcNAc(Man(Man(GlcNAc(Fuc)(Gal)))(Man(GlcNAc(Fuc)(Gal)))))(Fuc))
+ABO                                                                       FALSE
+ALG1                                                                       TRUE
+ALG10                                                                     FALSE
+ALG10B                                                                    FALSE
+ALG11                                                                     FALSE
+ALG12                                                                     FALSE
+       (GlcNAc(GlcNAc(Man(Man(GlcNAc(Gal(Neu5Ac))))(Man(GlcNAc(Fuc)(Gal)))))(Fuc))
+ABO                                                                          FALSE
+ALG1                                                                          TRUE
+ALG10                                                                        FALSE
+ALG10B                                                                       FALSE
+ALG11                                                                        FALSE
+ALG12                                                                        FALSE
+       (GlcNAc(GlcNAc(Man(Man(GlcNAc(Gal(Neu5Ac))))(Man(GlcNAc(Gal(Fuc))))))(Fuc))
+ABO                                                                          FALSE
+ALG1                                                                          TRUE
+ALG10                                                                        FALSE
+ALG10B                                                                       FALSE
+ALG11                                                                        FALSE
+ALG12                                                                        FALSE
+       (GlcNAc(GlcNAc(Man(Man(GlcNAc(Gal(Neu5Ac))(Fuc)))(Man(GlcNAc(Gal(Neu5Ac))))))(Fuc))
+ABO                                                                                  FALSE
+ALG1                                                                                  TRUE
+ALG10                                                                                FALSE
+ALG10B                                                                               FALSE
+ALG11                                                                                FALSE
+ALG12                                                                                FALSE
+       (GlcNAc(GlcNAc(Man(Man(GlcNAc(Gal(Neu5Ac)(Neu5Ac))))(Man(GlcNAc(Gal(Neu5Ac))))))(Fuc))
+ABO                                                                                     FALSE
+ALG1                                                                                     TRUE
+ALG10                                                                                   FALSE
+ALG10B                                                                                  FALSE
+ALG11                                                                                   FALSE
+ALG12                                                                                   FALSE
+       (GlcNAc(GlcNAc(Man(Man(GlcNAc(Gal(Neu5Ac)(Neu5Ac))))(Man(GlcNAc(Gal(Neu5Ac)(Neu5Ac))))))(Fuc))
+ABO                                                                                             FALSE
+ALG1                                                                                             TRUE
+ALG10                                                                                           FALSE
+ALG10B                                                                                          FALSE
+ALG11                                                                                           FALSE
+ALG12                                                                                           FALSE
+       (GlcNAc(GlcNAc(Man(Man(GlcNAc))(Man(GlcNAc))(GlcNAc)))(Fuc))
+ABO                                                           FALSE
+ALG1                                                           TRUE
+ALG10                                                         FALSE
+ALG10B                                                        FALSE
+ALG11                                                         FALSE
+ALG12                                                         FALSE
+       (GlcNAc(GlcNAc(Man(Man(GlcNAc(Gal))(GlcNAc))(Man(GlcNAc))))(Fuc))
+ABO                                                                FALSE
+ALG1                                                                TRUE
+ALG10                                                              FALSE
+ALG10B                                                             FALSE
+ALG11                                                              FALSE
+ALG12                                                              FALSE
+       (GlcNAc(GlcNAc(Man(Man(GlcNAc)(GlcNAc))(Man(GlcNAc(Gal)))))(Fuc))
+ABO                                                                FALSE
+ALG1                                                                TRUE
+ALG10                                                              FALSE
+ALG10B                                                             FALSE
+ALG11                                                              FALSE
+ALG12                                                              FALSE
+       (GlcNAc(GlcNAc(Man(Man(GlcNAc(Fuc)(Gal))(GlcNAc))(Man(GlcNAc)))))
+ABO                                                                FALSE
+ALG1                                                                TRUE
+ALG10                                                              FALSE
+ALG10B                                                             FALSE
+ALG11                                                              FALSE
+ALG12                                                              FALSE
+       (GlcNAc(GlcNAc(Man(Man(GlcNAc(Fuc)(Gal)))(Man(GlcNAc)(GlcNAc)))))
+ABO                                                                FALSE
+ALG1                                                                TRUE
+ALG10                                                              FALSE
+ALG10B                                                             FALSE
+ALG11                                                              FALSE
+ALG12                                                              FALSE
+       (GlcNAc(GlcNAc(Man(Man(GlcNAc(Fuc))(GlcNAc))(Man(GlcNAc(Gal))))))
+ABO                                                                FALSE
+ALG1                                                                TRUE
+ALG10                                                              FALSE
+ALG10B                                                             FALSE
+ALG11                                                              FALSE
+ALG12                                                              FALSE
+       (GlcNAc(GlcNAc(Man(Man(GlcNAc(Fuc))(GlcNAc(Gal)))(Man(GlcNAc)))))
+ABO                                                                FALSE
+ALG1                                                                TRUE
+ALG10                                                              FALSE
+ALG10B                                                             FALSE
+ALG11                                                              FALSE
+ALG12                                                              FALSE
+       (GlcNAc(GlcNAc(Man(Man(GlcNAc(Gal))(GlcNAc))(Man(GlcNAc(Fuc))))))
+ABO                                                                FALSE
+ALG1                                                                TRUE
+ALG10                                                              FALSE
+ALG10B                                                             FALSE
+ALG11                                                              FALSE
+ALG12                                                              FALSE
+       (GlcNAc(GlcNAc(Man(Man(GlcNAc(Gal(Fuc)))(GlcNAc))(Man(GlcNAc)))))
+ABO                                                                FALSE
+ALG1                                                                TRUE
+ALG10                                                              FALSE
+ALG10B                                                             FALSE
+ALG11                                                              FALSE
+ALG12                                                              FALSE
+       (GlcNAc(GlcNAc(Man(Man(GlcNAc(Gal(Fuc))))(Man(GlcNAc)(GlcNAc)))))
+ABO                                                                FALSE
+ALG1                                                                TRUE
+ALG10                                                              FALSE
+ALG10B                                                             FALSE
+ALG11                                                              FALSE
+ALG12                                                              FALSE
+       (GlcNAc(GlcNAc(Man(Man(GlcNAc(Fuc)(Gal)))(Man(GlcNAc))(GlcNAc)))(Fuc))
+ABO                                                                     FALSE
+ALG1                                                                     TRUE
+ALG10                                                                   FALSE
+ALG10B                                                                  FALSE
+ALG11                                                                   FALSE
+ALG12                                                                   FALSE
+       (GlcNAc(GlcNAc(Man(Man(GlcNAc(Gal(Fuc)))(GlcNAc))(Man(GlcNAc))))(Fuc))
+ABO                                                                     FALSE
+ALG1                                                                     TRUE
+ALG10                                                                   FALSE
+ALG10B                                                                  FALSE
+ALG11                                                                   FALSE
+ALG12                                                                   FALSE
+       (GlcNAc(GlcNAc(Man(Man(GlcNAc(Fuc)(Gal)))(Man(GlcNAc)(GlcNAc))))(Fuc))
+ABO                                                                     FALSE
+ALG1                                                                     TRUE
+ALG10                                                                   FALSE
+ALG10B                                                                  FALSE
+ALG11                                                                   FALSE
+ALG12                                                                   FALSE
+       (GlcNAc(GlcNAc(Man(Man(GlcNAc(Fuc)(Gal))(GlcNAc))(Man(GlcNAc))))(Fuc))
+ABO                                                                     FALSE
+ALG1                                                                     TRUE
+ALG10                                                                   FALSE
+ALG10B                                                                  FALSE
+ALG11                                                                   FALSE
+ALG12                                                                   FALSE
+       (GlcNAc(GlcNAc(Man(Man(GlcNAc(Fuc)(Gal)))(Man(GlcNAc(Fuc)(Gal)))(GlcNAc)))(Fuc))
+ABO                                                                               FALSE
+ALG1                                                                               TRUE
+ALG10                                                                             FALSE
+ALG10B                                                                            FALSE
+ALG11                                                                             FALSE
+ALG12                                                                             FALSE
+       (GlcNAc(GlcNAc(Man(Man(GlcNAc(Fuc)(Gal))(GlcNAc))(Man(GlcNAc(Fuc)(Gal)))))(Fuc))
+ABO                                                                               FALSE
+ALG1                                                                               TRUE
+ALG10                                                                             FALSE
+ALG10B                                                                            FALSE
+ALG11                                                                             FALSE
+ALG12                                                                             FALSE
+       (GlcNAc(GlcNAc(Man(Man(GlcNAc(Fuc)(Gal))(GlcNAc(Fuc)(Gal)))(Man(GlcNAc))))(Fuc))
+ABO                                                                               FALSE
+ALG1                                                                               TRUE
+ALG10                                                                             FALSE
+ALG10B                                                                            FALSE
+ALG11                                                                             FALSE
+ALG12                                                                             FALSE
+       (GlcNAc(GlcNAc(Man(Man(GlcNAc(Gal(Neu5Ac))(Fuc)))(Man(GlcNAc(Gal))(GlcNAc))))(Fuc))
+ABO                                                                                  FALSE
+ALG1                                                                                  TRUE
+ALG10                                                                                FALSE
+ALG10B                                                                               FALSE
+ALG11                                                                                FALSE
+ALG12                                                                                FALSE
+       (GlcNAc(GlcNAc(Man(Man(GlcNAc(Gal(Neu5Ac)))(GlcNAc))(Man(GlcNAc(Gal(Fuc))))))(Fuc))
+ABO                                                                                  FALSE
+ALG1                                                                                  TRUE
+ALG10                                                                                FALSE
+ALG10B                                                                               FALSE
+ALG11                                                                                FALSE
+ALG12                                                                                FALSE
+       (GlcNAc(GlcNAc(Man(Man(GlcNAc(Gal(Neu5Ac)))(GlcNAc(Fuc)(Gal)))(Man(GlcNAc(Fuc)(Gal)))))(Fuc))
+ABO                                                                                            FALSE
+ALG1                                                                                            TRUE
+ALG10                                                                                          FALSE
+ALG10B                                                                                         FALSE
+ALG11                                                                                          FALSE
+ALG12                                                                                          FALSE
+       (GlcNAc(GlcNAc(Man(Man(GlcNAc(Fuc)(Gal))(GlcNAc(Fuc)(Gal)))(Man(GlcNAc(Gal(Neu5Ac))))))(Fuc))
+ABO                                                                                            FALSE
+ALG1                                                                                            TRUE
+ALG10                                                                                          FALSE
+ALG10B                                                                                         FALSE
+ALG11                                                                                          FALSE
+ALG12                                                                                          FALSE
+       (GlcNAc(GlcNAc(Man(Man(GlcNAc(Gal(Neu5Ac))(Fuc))(GlcNAc(Gal(Neu5Ac))))(Man(GlcNAc(Gal)))))(Fuc))
+ABO                                                                                               FALSE
+ALG1                                                                                               TRUE
+ALG10                                                                                             FALSE
+ALG10B                                                                                            FALSE
+ALG11                                                                                             FALSE
+ALG12                                                                                             FALSE
+       (GlcNAc(GlcNAc(Man(Man(GlcNAc(Gal(Neu5Ac)))(GlcNAc(Gal(Fuc))))(Man(GlcNAc(Gal(Neu5Ac))))))(Fuc))
+ABO                                                                                               FALSE
+ALG1                                                                                               TRUE
+ALG10                                                                                             FALSE
+ALG10B                                                                                            FALSE
+ALG11                                                                                             FALSE
+ALG12                                                                                             FALSE
+       (GlcNAc(GlcNAc(Man(Man(GlcNAc(Gal(Neu5Ac)))(GlcNAc(Fuc)(Gal)))(Man(GlcNAc(Gal(Neu5Ac))))))(Fuc))
+ABO                                                                                               FALSE
+ALG1                                                                                               TRUE
+ALG10                                                                                             FALSE
+ALG10B                                                                                            FALSE
+ALG11                                                                                             FALSE
+ALG12                                                                                             FALSE
+       (GlcNAc(GlcNAc(Man(Man(GlcNAc(Gal(Neu5Ac))(Fuc))(GlcNAc(Gal(Neu5Ac))))(Man(GlcNAc(Gal(Neu5Ac))))))(Fuc))
+ABO                                                                                                       FALSE
+ALG1                                                                                                       TRUE
+ALG10                                                                                                     FALSE
+ALG10B                                                                                                    FALSE
+ALG11                                                                                                     FALSE
+ALG12                                                                                                     FALSE
+       (GlcNAc(GlcNAc(Man(Man(GlcNAc(Gal(Neu5Ac)))(GlcNAc(Gal(Neu5Ac))))(Man(GlcNAc(Gal(Neu5Ac))(Fuc)))))(Fuc))
+ABO                                                                                                       FALSE
+ALG1                                                                                                       TRUE
+ALG10                                                                                                     FALSE
+ALG10B                                                                                                    FALSE
+ALG11                                                                                                     FALSE
+ALG12                                                                                                     FALSE
+       (GlcNAc(GlcNAc(Man(Man(GlcNAc(Gal(Neu5Ac))(Fuc))(GlcNAc(Gal(Neu5Ac))))(Man(GlcNAc(Gal(Neu5Ac))(Fuc))))))
+ABO                                                                                                       FALSE
+ALG1                                                                                                       TRUE
+ALG10                                                                                                     FALSE
+ALG10B                                                                                                    FALSE
+ALG11                                                                                                     FALSE
+ALG12                                                                                                     FALSE
+       (GlcNAc(GlcNAc(Man(Man(GlcNAc(Gal))(GlcNAc))(Man(GlcNAc)(GlcNAc))))(Fuc))
+ABO                                                                        FALSE
+ALG1                                                                        TRUE
+ALG10                                                                      FALSE
+ALG10B                                                                     FALSE
+ALG11                                                                      FALSE
+ALG12                                                                      FALSE
+       (GlcNAc(GlcNAc(Man(Man(GlcNAc(Fuc)(Gal))(GlcNAc))(Man(GlcNAc)(GlcNAc)))))
+ABO                                                                        FALSE
+ALG1                                                                        TRUE
+ALG10                                                                      FALSE
+ALG10B                                                                     FALSE
+ALG11                                                                      FALSE
+ALG12                                                                      FALSE
+       (GlcNAc(GlcNAc(Man(Man(GlcNAc(Gal(Fuc)))(GlcNAc))(Man(GlcNAc)(GlcNAc)))))
+ABO                                                                        FALSE
+ALG1                                                                        TRUE
+ALG10                                                                      FALSE
+ALG10B                                                                     FALSE
+ALG11                                                                      FALSE
+ALG12                                                                      FALSE
+       (GlcNAc(GlcNAc(Man(Man(GlcNAc(Fuc)(Gal))(GlcNAc))(Man(GlcNAc(Fuc)(Gal))(GlcNAc))))(Fuc))
+ABO                                                                                       FALSE
+ALG1                                                                                       TRUE
+ALG10                                                                                     FALSE
+ALG10B                                                                                    FALSE
+ALG11                                                                                     FALSE
+ALG12                                                                                     FALSE
+       (GlcNAc(GlcNAc(Man(Man(GlcNAc(Gal(Neu5Ac)))(GlcNAc(Fuc)(Gal)))(Man(GlcNAc(Fuc)(Gal))(GlcNAc(Fuc)(Gal)))))(Fuc))
+ABO                                                                                                              FALSE
+ALG1                                                                                                              TRUE
+ALG10                                                                                                            FALSE
+ALG10B                                                                                                           FALSE
+ALG11                                                                                                            FALSE
+ALG12                                                                                                            FALSE
+       (GlcNAc(GlcNAc(Man(Man(GlcNAc(Gal(Neu5Ac))(Fuc))(GlcNAc(Fuc)(Gal)))(Man(GlcNAc(Fuc)(Gal))(GlcNAc(Gal)))))(Fuc))
+ABO                                                                                                              FALSE
+ALG1                                                                                                              TRUE
+ALG10                                                                                                            FALSE
+ALG10B                                                                                                           FALSE
+ALG11                                                                                                            FALSE
+ALG12                                                                                                            FALSE
+       (GlcNAc(GlcNAc(Man(Man(GlcNAc(Gal(Neu5Ac)))(GlcNAc(Fuc)(Gal)))(Man(GlcNAc(Gal(Neu5Ac))(Fuc))(GlcNAc(Gal)))))(Fuc))
+ABO                                                                                                                 FALSE
+ALG1                                                                                                                 TRUE
+ALG10                                                                                                               FALSE
+ALG10B                                                                                                              FALSE
+ALG11                                                                                                               FALSE
+ALG12                                                                                                               FALSE
+       (GlcNAc(GlcNAc(Man(Man(GlcNAc(Gal(Neu5Ac))(Fuc))(GlcNAc(Fuc)(Gal)))(Man(GlcNAc(Gal(Neu5Ac))(Fuc))(GlcNAc(Gal))))))
+ABO                                                                                                                 FALSE
+ALG1                                                                                                                 TRUE
+ALG10                                                                                                               FALSE
+ALG10B                                                                                                              FALSE
+ALG11                                                                                                               FALSE
+ALG12                                                                                                               FALSE
+       (GlcNAc(GlcNAc(Man(Man(GlcNAc(Gal(Neu5Ac)))(GlcNAc(Fuc)(Gal)))(Man(GlcNAc(Gal(Neu5Ac)))(GlcNAc(Fuc)(Gal)))))(Fuc))
+ABO                                                                                                                 FALSE
+ALG1                                                                                                                 TRUE
+ALG10                                                                                                               FALSE
+ALG10B                                                                                                              FALSE
+ALG11                                                                                                               FALSE
+ALG12                                                                                                               FALSE
+       (GlcNAc(GlcNAc(Man(Man(GlcNAc(Gal(Neu5Ac))(Fuc))(GlcNAc(Gal)))(Man(GlcNAc(Gal(Neu5Ac))(Fuc))(GlcNAc(Gal)))))(Fuc))
+ABO                                                                                                                 FALSE
+ALG1                                                                                                                 TRUE
+ALG10                                                                                                               FALSE
+ALG10B                                                                                                              FALSE
+ALG11                                                                                                               FALSE
+ALG12                                                                                                               FALSE
+       (GlcNAc(GlcNAc(Man(Man(GlcNAc(Gal(Neu5Ac)))(GlcNAc(Fuc)(Gal)))(Man(GlcNAc(Gal(Neu5Ac))(Fuc))(GlcNAc))))(Fuc))
+ABO                                                                                                            FALSE
+ALG1                                                                                                            TRUE
+ALG10                                                                                                          FALSE
+ALG10B                                                                                                         FALSE
+ALG11                                                                                                          FALSE
+ALG12                                                                                                          FALSE
+       (GlcNAc(GlcNAc(Man(Man(GlcNAc(Gal(Neu5Ac))(Fuc))(GlcNAc(Gal)))(Man(GlcNAc(Gal(Neu5Ac))(Fuc))(GlcNAc))))(Fuc))
+ABO                                                                                                            FALSE
+ALG1                                                                                                            TRUE
+ALG10                                                                                                          FALSE
+ALG10B                                                                                                         FALSE
+ALG11                                                                                                          FALSE
+ALG12                                                                                                          FALSE
+       (GlcNAc(GlcNAc(Man(Man(GlcNAc(Fuc))(Man))(Man(Man)(Man))))(Fuc))
+ABO                                                               FALSE
+ALG1                                                               TRUE
+ALG10                                                             FALSE
+ALG10B                                                            FALSE
+ALG11                                                              TRUE
+ALG12                                                              TRUE
+       (GlcNAc(GlcNAc(Man(Man(GlcNAc(Gal(Neu5Ac)(Fuc)))(GlcNAc(Gal(Neu5Ac))))(Man(GlcNAc)(GlcNAc))))(Fuc))
+ABO                                                                                                  FALSE
+ALG1                                                                                                  TRUE
+ALG10                                                                                                FALSE
+ALG10B                                                                                               FALSE
+ALG11                                                                                                FALSE
+ALG12                                                                                                FALSE
+       (GlcNAc(GlcNAc(Man(Man(GlcNAc(Gal(Neu5Ac))(Fuc))(GlcNAc(Gal(Neu5Ac))))(Man(GlcNAc)(GlcNAc))))(Fuc))
+ABO                                                                                                  FALSE
+ALG1                                                                                                  TRUE
+ALG10                                                                                                FALSE
+ALG10B                                                                                               FALSE
+ALG11                                                                                                FALSE
+ALG12                                                                                                FALSE
+       (GlcNAc(GlcNAc(Man(Man(GlcNAc(Gal(Neu5Ac)(Fuc)))(GlcNAc))(Man(GlcNAc(Gal(Neu5Ac)))(GlcNAc))))(Fuc))
+ABO                                                                                                  FALSE
+ALG1                                                                                                  TRUE
+ALG10                                                                                                FALSE
+ALG10B                                                                                               FALSE
+ALG11                                                                                                FALSE
+ALG12                                                                                                FALSE
+       (GlcNAc(GlcNAc(Man(Man(GlcNAc(Gal(Neu5Ac))(Fuc))(GlcNAc))(Man(GlcNAc(Gal(Neu5Ac)))(GlcNAc))))(Fuc))
+ABO                                                                                                  FALSE
+ALG1                                                                                                  TRUE
+ALG10                                                                                                FALSE
+ALG10B                                                                                               FALSE
+ALG11                                                                                                FALSE
+ALG12                                                                                                FALSE
+       (GlcNAc(GlcNAc(Man(Man(GlcNAc(Gal(Neu5Ac)(Fuc))(Fuc))(GlcNAc(Gal(Neu5Ac))))(Man(GlcNAc)(GlcNAc)))))
+ABO                                                                                                  FALSE
+ALG1                                                                                                  TRUE
+ALG10                                                                                                FALSE
+ALG10B                                                                                               FALSE
+ALG11                                                                                                FALSE
+ALG12                                                                                                FALSE
+       (GlcNAc(GlcNAc(Man(Man(GlcNAc(Gal(Neu5Ac)(Fuc)))(GlcNAc(Gal(Neu5Ac)(Fuc))))(Man(GlcNAc)(GlcNAc)))))
+ABO                                                                                                  FALSE
+ALG1                                                                                                  TRUE
+ALG10                                                                                                FALSE
+ALG10B                                                                                               FALSE
+ALG11                                                                                                FALSE
+ALG12                                                                                                FALSE
+       (GlcNAc(GlcNAc(Man(Man(GlcNAc(Gal(Neu5Ac))(Fuc))(GlcNAc(Gal(Neu5Ac)(Fuc))))(Man(GlcNAc)(GlcNAc)))))
+ABO                                                                                                  FALSE
+ALG1                                                                                                  TRUE
+ALG10                                                                                                FALSE
+ALG10B                                                                                               FALSE
+ALG11                                                                                                FALSE
+ALG12                                                                                                FALSE
+       (GlcNAc(GlcNAc(Man(Man(GlcNAc(Gal(Neu5Ac))(Fuc))(GlcNAc(Gal(Neu5Ac))(Fuc)))(Man(GlcNAc)(GlcNAc)))))
+ABO                                                                                                  FALSE
+ALG1                                                                                                  TRUE
+ALG10                                                                                                FALSE
+ALG10B                                                                                               FALSE
+ALG11                                                                                                FALSE
+ALG12                                                                                                FALSE
+       (GlcNAc(GlcNAc(Man(Man(GlcNAc(Gal(Neu5Ac)(Fuc))(Fuc))(GlcNAc))(Man(GlcNAc(Gal(Neu5Ac)))(GlcNAc)))))
+ABO                                                                                                  FALSE
+ALG1                                                                                                  TRUE
+ALG10                                                                                                FALSE
+ALG10B                                                                                               FALSE
+ALG11                                                                                                FALSE
+ALG12                                                                                                FALSE
+       (GlcNAc(GlcNAc(Man(Man(GlcNAc(Gal(Neu5Ac)(Fuc)))(GlcNAc))(Man(GlcNAc(Gal(Neu5Ac)(Fuc)))(GlcNAc)))))
+ABO                                                                                                  FALSE
+ALG1                                                                                                  TRUE
+ALG10                                                                                                FALSE
+ALG10B                                                                                               FALSE
+ALG11                                                                                                FALSE
+ALG12                                                                                                FALSE
+       (GlcNAc(GlcNAc(Man(Man(GlcNAc(Gal(Neu5Ac))(Fuc))(GlcNAc))(Man(GlcNAc(Gal(Neu5Ac)(Fuc)))(GlcNAc)))))
+ABO                                                                                                  FALSE
+ALG1                                                                                                  TRUE
+ALG10                                                                                                FALSE
+ALG10B                                                                                               FALSE
+ALG11                                                                                                FALSE
+ALG12                                                                                                FALSE
+       (GlcNAc(GlcNAc(Man(Man(GlcNAc(Gal(Neu5Ac))(Fuc))(GlcNAc))(Man(GlcNAc(Gal(Neu5Ac))(Fuc))(GlcNAc)))))
+ABO                                                                                                  FALSE
+ALG1                                                                                                  TRUE
+ALG10                                                                                                FALSE
+ALG10B                                                                                               FALSE
+ALG11                                                                                                FALSE
+ALG12                                                                                                FALSE
+       (GlcNAc(GlcNAc(Man(Man(GlcNAc(Gal(Fuc)))(GlcNAc(Gal)))(Man(GlcNAc(Gal(Fuc))(Fuc)))))(Fuc))
+ABO                                                                                         FALSE
+ALG1                                                                                         TRUE
+ALG10                                                                                       FALSE
+ALG10B                                                                                      FALSE
+ALG11                                                                                       FALSE
+ALG12                                                                                       FALSE
+       (GlcNAc(GlcNAc(Man(Man(GlcNAc(Fuc)(Gal))(GlcNAc(Gal)))(Man(GlcNAc(Gal(Fuc))(Fuc)))))(Fuc))
+ABO                                                                                         FALSE
+ALG1                                                                                         TRUE
+ALG10                                                                                       FALSE
+ALG10B                                                                                      FALSE
+ALG11                                                                                       FALSE
+ALG12                                                                                       FALSE
+
+FALSE 
+ 9021 
+
+FALSE  TRUE 
+   85     8 
+
+FALSE 
+   85 
+
+FALSE  TRUE 
+   48    37 
+
+FALSE 
+   48 
+[1] 48 97
+[1] 93 97
+
+FALSE 
+   97 
+
+FALSE 
+   97 
+        (GlcNAc(GlcNAc(Man(Man(Man)(Man))(Man(Man)))))
+ALG11                                             TRUE
+ALG12                                             TRUE
+ALG3                                              TRUE
+ALG9                                              TRUE
+B3GALT2                                          FALSE
+        (GlcNAc(GlcNAc(Man(Man(Man(Man)))(Man(Man)))))
+ALG11                                             TRUE
+ALG12                                             TRUE
+ALG3                                              TRUE
+ALG9                                              TRUE
+B3GALT2                                          FALSE
+        (GlcNAc(GlcNAc(Man(Man(Man(Man))(Man))(Man))))
+ALG11                                             TRUE
+ALG12                                             TRUE
+ALG3                                              TRUE
+ALG9                                              TRUE
+B3GALT2                                          FALSE
+        (GlcNAc(GlcNAc(Man(Man(Man(Man)(Man)))(Man))))
+ALG11                                             TRUE
+ALG12                                             TRUE
+ALG3                                              TRUE
+ALG9                                              TRUE
+B3GALT2                                          FALSE
+        (GlcNAc(GlcNAc(Man(Man(Man(Man))(Man))(Man(Man)))))
+ALG11                                                  TRUE
+ALG12                                                  TRUE
+ALG3                                                   TRUE
+ALG9                                                   TRUE
+B3GALT2                                               FALSE

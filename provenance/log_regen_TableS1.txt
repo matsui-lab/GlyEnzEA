@@ -1,0 +1,37 @@
+WROTE output/TableS1_enzyme_pattern_groups.csv  ( 16 groups )
+           Pattern_group N_enzymes N_glycan_groups Enzyme_class
+                  <char>     <int>           <int>       <char>
+ 1:           B4GALT/NEU        10              24        GH/GT
+ 2:   ST3GAL/ST6GAL/CMAS         7              12     GT/Other
+ 3:              MGAT4/5         5              16     GT/Other
+ 4:         ALG11/12/3/9         4               8           GT
+ 5:             FUT3/5/6         3              22           GT
+ 6:             FUT4/7/9         3              23           GT
+ 7: MAN1A1/MAN1A2/MAN1C1         3               7           GH
+ 8:           MGAT1/2/5B         3              29           GT
+ 9:               FUT1/2         2               9           GT
+10:             MAN2A1/2         2              26           GH
+11:              B3GALT5         1              22           GT
+12:                FUCA1         1               8           GH
+13:                 FUT8         1              28           GT
+14:               MAN1B1         1               2           GH
+15:                MANEA         1               1        Other
+16:                MGAT3         1               7           GT
+                                                                  Member_enzymes
+                                                                          <char>
+ 1: B3GALT2, B4GALT1, B4GALT2, B4GALT3, B4GALT4, B4GALT5, NEU1, NEU2, NEU3, NEU4
+ 2:                   CMAS, ST3GAL1, ST3GAL3, ST3GAL4, ST3GAL6, ST6GAL1, ST6GAL2
+ 3:                                        MGAT4A, MGAT4B, MGAT4C, MGAT4D, MGAT5
+ 4:                                                     ALG11, ALG12, ALG3, ALG9
+ 5:                                                             FUT3, FUT5, FUT6
+ 6:                                                             FUT4, FUT7, FUT9
+ 7:                                                       MAN1A1, MAN1A2, MAN1C1
+ 8:                                                         MGAT1, MGAT2, MGAT5B
+ 9:                                                                   FUT1, FUT2
+10:                                                               MAN2A1, MAN2A2
+11:                                                                      B3GALT5
+12:                                                                        FUCA1
+13:                                                                         FUT8
+14:                                                                       MAN1B1
+15:                                                                        MANEA
+16:                                                                        MGAT3

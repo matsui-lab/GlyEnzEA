@@ -1,0 +1,4 @@
+network-null cols: pathway | size | ES_obs | fgsea_NES | fgsea_pval | fgsea_qval | netnull_NES | netnull_pval | netnull_qval 
+null device 
+          1 
+WROTE output/FigureS_stat_robustness.pdf

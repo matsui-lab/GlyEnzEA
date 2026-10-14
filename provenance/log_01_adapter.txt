@@ -1,0 +1,18 @@
+ 警告メッセージ: 
+ パッケージ ‘readxl’ はバージョン 4.3.3 の R の下で造られました  
+N-glycan section: raw rows 2..42 (41 rows)
+Rows with struct_id == "N/A": 1
+Unique GlyTouCan IDs: 107
+toposeq sets ok: 107 / 107 (100.0%);  extra toposeqs from |-expansion: 907
+Rows with ≥1 candidate toposeq: 40 / 41 (lost 1)
+Lost row names (all-ambiguous):
+[1] "SA1Gal1N1M6N2"
+  MGAT1-KO: 823 rows, 40 unique groups, 822 unique toposeq → output/hek293/glycomeRes_MGAT1_KO.rds
+  MGAT2-KO: 823 rows, 40 unique groups, 822 unique toposeq → output/hek293/glycomeRes_MGAT2_KO.rds
+  MGAT4A&4B-KO: 823 rows, 40 unique groups, 822 unique toposeq → output/hek293/glycomeRes_MGAT4A_4B_KO.rds
+  MGAT5-KO: 823 rows, 40 unique groups, 822 unique toposeq → output/hek293/glycomeRes_MGAT5_KO.rds
+  T-KO(MANA1&A2&B1): 823 rows, 40 unique groups, 822 unique toposeq → output/hek293/glycomeRes_T_KO_MANA1_A2_B1_.rds
+  B4GALNT3&4-KO: 823 rows, 40 unique groups, 822 unique toposeq → output/hek293/glycomeRes_B4GALNT3_4_KO.rds
+  SLC35C1-KO: 823 rows, 40 unique groups, 822 unique toposeq → output/hek293/glycomeRes_SLC35C1_KO.rds
+
+Done.

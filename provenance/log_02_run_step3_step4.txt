@@ -1,0 +1,89 @@
+ 警告メッセージ: 
+ パッケージ ‘readxl’ はバージョン 4.3.3 の R の下で造られました  
+triplet rows: 2316
+unique toposeq: 822  unique groups: 40
+Building triplet igraphs (parallel) ...
+Building glycome igraphs ...
+Substructure matching ...
+elapsed: 302.4 sec
+res_clean (toposeq level): 60 enzymes × 822 toposeq
+res_clean_group: 60 enzymes × 40 groups
+enzyme pattern groups: 22 (was 60 single enzymes)
+
+--- GSEA: MGAT1_KO ---
+  pathways: 22; q<0.05: 2; q<0.10: 3; pval<0.05: 4
+  top 5:
+     pathway       NES         pval     qvalue size
+1       FUT8 -1.857844 0.0007017978 0.01543955   21
+2 MGAT1/2/5B -1.819673 0.0026463917 0.02911031   29
+3   MAN2A1/2 -1.680855 0.0098102788 0.07194204   28
+4 B4GALT/NEU -1.555051 0.0206428660 0.11353576   24
+5    B3GALT5 -1.403915 0.0595380738 0.26196752   20
+
+--- GSEA: MGAT2_KO ---
+  pathways: 22; q<0.05: 2; q<0.10: 6; pval<0.05: 6
+  top 5:
+   pathway       NES         pval       qvalue size
+1  MGAT4/5 -1.798708 1.485453e-05 0.0002097111   16
+2  B3GALT5 -1.691081 1.098285e-03 0.0077526023   20
+3     FUT8 -1.550892 1.100811e-02 0.0518028764   21
+4   FUT5/6 -1.471211 1.982809e-02 0.0699815073   14
+5 MAN2A1/2 -1.483759 3.124797e-02 0.0810900631   28
+
+--- GSEA: MGAT4A_4B_KO ---
+  pathways: 22; q<0.05: 0; q<0.10: 0; pval<0.05: 0
+  top 5:
+     pathway       NES       pval    qvalue size
+1 MGAT1/2/5B  1.284952 0.09618272 0.9018517   29
+2    CHST9/8 -1.282096 0.20866820 0.9018517    2
+3      MGAT3  1.283826 0.23687629 0.9018517    5
+4   MAN2A1/2  1.106597 0.28516024 0.9018517   28
+5 B3GNT2/4/8  1.085882 0.39548090 0.9018517    1
+
+--- GSEA: MGAT5_KO ---
+  pathways: 22; q<0.05: 0; q<0.10: 0; pval<0.05: 0
+  top 5:
+     pathway       NES      pval    qvalue size
+1   MAN2A1/2  1.285824 0.1072909 0.6441644   28
+2 MGAT1/2/5B  1.251134 0.1268881 0.6441644   29
+3    CHST9/8  1.302829 0.1486173 0.6441644    2
+4 B3GNT2/4/8 -1.254065 0.1491539 0.6441644    1
+5     FUT1/2 -1.361304 0.1529020 0.6441644    2
+
+--- GSEA: T_KO_MANA1_A2_B1_ ---
+  pathways: 22; q<0.05: 11; q<0.10: 14; pval<0.05: 13
+  top 5:
+       pathway       NES         pval     qvalue size
+1         FUT8 -1.944283 6.220817e-05 0.00136858   21
+2      B3GALT5 -1.779778 1.381272e-03 0.01095032   20
+3 ALG11/12/3/9  2.273751 1.493225e-03 0.01095032    9
+4     MAN2A1/2 -1.711382 6.038973e-03 0.03321435   28
+5       FUT5/6 -1.583066 1.145820e-02 0.03781513   14
+
+--- GSEA: B4GALNT3_4_KO ---
+  pathways: 22; q<0.05: 1; q<0.10: 1; pval<0.05: 3
+  top 5:
+                                          pathway       NES        pval
+1                                         CHST9/8 -1.424947 0.002413925
+2                      B3GALNT2/B4GALNT3/B4GALNT4 -1.440462 0.016475833
+3                                           MGAT3  1.448039 0.021527139
+4                                            CMAS  1.233194 0.189645777
+5 ST3GAL3/ST3GAL4/ST3GAL6/ST6GAL1/ST6GAL2/ST3GAL1  1.229337 0.197454461
+      qvalue size
+1 0.03511163    2
+2 0.10437401    3
+3 0.10437401    5
+4 0.43679593   18
+5 0.43679593   17
+
+--- GSEA: SLC35C1_KO ---
+  pathways: 22; q<0.05: 0; q<0.10: 4; pval<0.05: 5
+  top 5:
+     pathway       NES        pval     qvalue size
+1 B4GALT/NEU -1.684356 0.003016965 0.06637324   24
+2    B3GALT5 -1.574543 0.009015199 0.07060495   20
+3       FUT8 -1.563533 0.010883562 0.07060495   21
+4 MGAT1/2/5B -1.608171 0.012837263 0.07060495   29
+5     FUT5/6 -1.396145 0.048625521 0.18027688   14
+
+Done. Saved output/hek293/resGSEA_by_ko.rds

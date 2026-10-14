@@ -1,0 +1,13 @@
+WROTE output/FigureS3_jaccard_heatmap.pdf
+
+global off-diagonal Jaccard range: 0.00 - 0.97
+
+late-pathway terminal groups submatrix:
+                   ST3GAL/ST6GAL/CMAS FUT3/5/6 FUT4/7/9 B4GALT/NEU B3GALT5
+ST3GAL/ST6GAL/CMAS              1.000    0.417    0.400      0.500   0.545
+FUT3/5/6                        0.417    1.000    0.957      0.917   0.833
+FUT4/7/9                        0.400    0.957    1.000      0.880   0.800
+B4GALT/NEU                      0.500    0.917    0.880      1.000   0.917
+B3GALT5                         0.545    0.833    0.800      0.917   1.000
+
+late-pathway off-diagonal range: 0.40 - 0.96

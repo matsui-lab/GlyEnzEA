@@ -1,0 +1,15 @@
+scripts/hek293/00_verify_toposeq.R exit=0 2s
+scripts/hek293/01_adapter.R exit=0 30s
+scripts/hek293/02_run_step3_step4.R exit=0 316s
+scripts/hek293/build_supp_data.R exit=0 0s
+scripts/mouse/step4b_gsea_network_null.R exit=0 56s
+scripts/robustness/minsize_sensitivity.R exit=0 2s
+scripts/robustness/three_null_comparison.R exit=0 27s
+scripts/robustness/figS_stat_robustness.R exit=0 8s
+scripts/robustness/figS3_jaccard_heatmap.R exit=0 1s
+scripts/mouse/step4b_gsea_network_null.R exit=0 57s
+scripts/robustness/minsize_sensitivity.R exit=0 3s
+scripts/robustness/three_null_comparison.R exit=0 29s
+scripts/robustness/figS_stat_robustness.R exit=0 10s
+scripts/robustness/figS3_jaccard_heatmap.R exit=0 1s
+scripts/mouse/step3b_glycodecipher_mapping.R exit=0 5064s

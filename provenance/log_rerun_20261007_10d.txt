@@ -1,0 +1,50 @@
+# Rerun of the mouse chain with 10d kept apart (2026-10-07)
+
+Change: scripts/mouse/step2_glycome.R, nos_keep_separate gains "10d" (see data/Kizuka_MCP_2019/source_notes.md).
+Command: Rscript run_all.R mouse robustness figures
+
+[mouse] scripts/mouse/step2_glycome.R ... ok (1 s)
+[mouse] scripts/mouse/step3_build_pk.R ... ok (209 s)
+[mouse] scripts/mouse/step4_glycome_ORA.R ... ok (2 s)
+[mouse] scripts/mouse/step4b_gsea_network_null.R ... ok (54 s)
+[robustness] scripts/robustness/minsize_sensitivity.R ... ok (2 s)
+[robustness] scripts/robustness/three_null_comparison.R ... ok (25 s)
+[robustness] scripts/robustness/figS_stat_robustness.R ... ok (8 s)
+[robustness] scripts/robustness/figS3_jaccard_heatmap.R ... ok (1 s)
+[robustness] scripts/robustness/regen_TableS1.R ... ok (0 s)
+[figures] scripts/figures/fig3_matrix.R ... ok (3 s)
+[figures] scripts/figures/fig4_mgat3.R ... ok (2 s)
+[figures] scripts/figures/fig5_hek293.R ... ok (1 s)
+done
+
+## MGAT3 glycan set, before (frozen 2026-09-28) -> after
+NES -1.660  nominal P 5.80e-04  Storey q 0.0062  BH 0.0093  sets 16  sig(Storey) 1
+NES -1.601  nominal P 3.05e-03  Storey q 0.0325  BH 0.0488  sets 16  sig(Storey) 1
+
+## MGAT3 across nPermSimple x 5 seeds (after)
+nperm  p_mean  storey_min storey_max  BH_min BH_max  storey<0.05 BH<0.05
+1e3    0.00315 0.0206 0.0419  0.0309 0.0633  5/5 2/5
+5e3    0.00270 0.0149 0.0347  0.0223 0.0520  5/5 4/5
+1e4    0.00272 0.0234 0.0321  0.0374 0.0481  5/5 5/5
+5e4    0.00270 0.0259 0.0310  0.0388 0.0465  5/5 5/5
+1e5    0.00264 0.0253 0.0322  0.0379 0.0483  5/5 5/5
+(MGAT3 was the only Storey-significant set in all 25 runs)
+
+## provenance/compare_frozen.R after refreshing the frozen copies
+triplet_enzdb.rds                        DIFFERENT
+triplet_glygen.rds                       DIFFERENT
+glycomeRes.rds                           IDENTICAL
+triplet.rds                              DIFFERENT
+res_clean.rds                            DIFFERENT
+res_clean_group.rds                      IDENTICAL
+glycomeRes_group.rds                     IDENTICAL
+glycan2enzMap_enzyme_grouped.rds         IDENTICAL
+enzyme_pattern_groups_list.rds           IDENTICAL
+resORA_down.rds                          IDENTICAL
+resGSEA.rds                              NES max|diff| = 0.00e+00, pval max|diff| = 0.00e+00, qvalue max|diff| = 0.00e+00
+  pathway       NES        pval       padj     qvalue
+1   MGAT3 -1.601063 0.003048027 0.04876843 0.03251229
+
+Note: triplet_enzdb / triplet_glygen / triplet / res_clean report DIFFERENT because the frozen copies of these four
+files are from the April 2026 run (canonical topoSeq strings differ in branch order only; res_clean differs in
+attributes only). This predates 2026-10-07 and is documented in README (reproduction status 2026-09-28).

@@ -1,0 +1,12 @@
+ 警告メッセージ: 
+ パッケージ ‘cowplot’ はバージョン 4.3.3 の R の下で造られました  
+                  ko  rank          q method letter
+              <char> <int>      <num> <char> <char>
+1:          MGAT1_KO     2 0.02911031     BH      A
+2:          MGAT2_KO     6 0.08109006 Storey      B
+3:      MGAT4A_4B_KO    15 0.90185174     BH      C
+4:          MGAT5_KO    16 0.71459054     BH      D
+5: T_KO_MANA1_A2_B1_    10 0.04097455     BH      E
+6:     B4GALNT3_4_KO     2 0.10437401 Storey      F
+7:        SLC35C1_KO     3 0.07060495     BH      G
+saved paper/figs/fig5.pdf

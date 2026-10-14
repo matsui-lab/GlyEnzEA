@@ -1,0 +1,34 @@
+wrote suppT_gsea_all / composition / highmannose / target_verdict TSVs
+                    KO                     target  expected   NES      q
+                <char>                     <char>    <char> <num>  <num>
+1:            MGAT1-KO                 MGAT1/2/5B      DOWN -1.82 0.0291
+2:            MGAT2-KO                 MGAT1/2/5B      DOWN -1.47 0.0811
+3: T-KO (MAN1A1&A2&B1)       MAN1A1/MAN1A2/MAN1C1        UP  1.70 0.0410
+4:       B4GALNT3&4-KO B3GALNT2/B4GALNT3/B4GALNT4      DOWN -1.44 0.1040
+5:          SLC35C1-KO                       FUT8 DOWN(FUT) -1.56 0.0706
+6:        MGAT4A&4B-KO                    MGAT4/5      DOWN -0.87 0.9020
+7:            MGAT5-KO                    MGAT4/5      DOWN -0.98 0.7150
+   verdict
+    <char>
+1:     hit
+2: partial
+3:     hit
+4: partial
+5: partial
+6:    miss
+7:    miss
+       class WT_pct
+2    N2 (bi)   94.3
+3   N3 (tri)    3.2
+1  N1 (mono)    2.0
+4 N4 (tetra)    0.6
+           condition highmannose_pct
+              <char>           <num>
+1:                WT            75.5
+2:          MGAT1-KO            94.3
+3:          MGAT2-KO            59.8
+4:      MGAT4A&4B-KO            70.3
+5:          MGAT5-KO            67.1
+6: T-KO(MANA1&A2&B1)            96.3
+7:     B4GALNT3&4-KO            70.3
+8:        SLC35C1-KO            81.2

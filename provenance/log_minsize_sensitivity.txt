@@ -1,0 +1,46 @@
+各 pathway の set size:
+               MANEA               MAN1B1                MGAT3 
+                   1                    2                    7 
+MAN1A1/MAN1A2/MAN1C1                FUCA1         ALG11/12/3/9 
+                   7                    8                    8 
+              FUT1/2   ST3GAL/ST6GAL/CMAS              MGAT4/5 
+                   9                   12                   16 
+             B3GALT5             FUT3/5/6             FUT4/7/9 
+                  22                   22                   23 
+          B4GALT/NEU             MAN2A1/2                 FUT8 
+                  24                   26                   28 
+          MGAT1/2/5B 
+                  29 
+
+=== minSize=1 で検定された pathway 数: 16  / minSize=2: 15  / minSize=3: 14 
+
+=== minSize=2 で除外される pathway（size<2）===
+[1] "MANEA"
+=== minSize=3 で除外 ===
+[1] "MANEA"  "MAN1B1"
+
+=== Table Y 実体: minSize 1/2/3 での p 値比較 ===
+                 pathway   p_ms1   p_ms2   p_ms3
+                  <char>   <num>   <num>   <num>
+ 1:                MGAT3 0.00054 0.00054 0.00054
+ 2:                FUCA1 0.08200 0.08200 0.08200
+ 3:   ST3GAL/ST6GAL/CMAS 0.09100 0.09100 0.09100
+ 4:             FUT4/7/9 0.14000 0.14000 0.14000
+ 5:              B3GALT5 0.22000 0.22000 0.22000
+ 6:             FUT3/5/6 0.23000 0.23000 0.23000
+ 7:           B4GALT/NEU 0.27000 0.27000 0.27000
+ 8: MAN1A1/MAN1A2/MAN1C1 0.28000 0.28000 0.28000
+ 9:           MGAT1/2/5B 0.31000 0.31000 0.31000
+10:         ALG11/12/3/9 0.49000 0.49000 0.49000
+11:             MAN2A1/2 0.57000 0.57000 0.57000
+12:                MANEA 0.65000      NA      NA
+13:                 FUT8 0.79000 0.79000 0.79000
+14:               MAN1B1 0.79000 0.79000      NA
+15:              MGAT4/5 0.84000 0.84000 0.84000
+16:               FUT1/2 0.98000 0.98000 0.98000
+
+MGAT3 が全 minSize で有意か:
+Key: <pathway>
+   pathway   p_ms1   p_ms2   p_ms3
+    <char>   <num>   <num>   <num>
+1:   MGAT3 0.00054 0.00054 0.00054

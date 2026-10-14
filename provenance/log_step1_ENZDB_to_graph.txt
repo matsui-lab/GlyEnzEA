@@ -1,0 +1,833 @@
+── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.1.4     ✔ purrr     1.2.1
+✔ forcats   1.0.1     ✔ readr     2.1.6
+✔ ggplot2   4.0.1     ✔ tibble    3.3.1
+✔ lubridate 1.9.4     ✔ tidyr     1.3.2
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::between()     masks data.table::between()
+✖ dplyr::filter()      masks stats::filter()
+✖ dplyr::first()       masks data.table::first()
+✖ lubridate::hour()    masks data.table::hour()
+✖ lubridate::isoweek() masks data.table::isoweek()
+✖ lubridate::isoyear() masks data.table::isoyear()
+✖ dplyr::lag()         masks stats::lag()
+✖ dplyr::last()        masks data.table::last()
+✖ lubridate::mday()    masks data.table::mday()
+✖ lubridate::minute()  masks data.table::minute()
+✖ lubridate::month()   masks data.table::month()
+✖ lubridate::quarter() masks data.table::quarter()
+✖ lubridate::second()  masks data.table::second()
+✖ purrr::transpose()   masks data.table::transpose()
+✖ lubridate::wday()    masks data.table::wday()
+✖ lubridate::week()    masks data.table::week()
+✖ lubridate::yday()    masks data.table::yday()
+✖ lubridate::year()    masks data.table::year()
+ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
+ 警告メッセージ: 
+ パッケージ ‘lubridate’ はバージョン 4.3.3 の R の下で造られました  
+
+ 次のパッケージを付け加えます: ‘igraph’ 
+
+ 以下のオブジェクトは ‘package:lubridate’ からマスクされています:
+
+    %--%, union
+
+ 以下のオブジェクトは ‘package:dplyr’ からマスクされています:
+
+    as_data_frame, groups, union
+
+ 以下のオブジェクトは ‘package:purrr’ からマスクされています:
+
+    compose, simplify
+
+ 以下のオブジェクトは ‘package:tidyr’ からマスクされています:
+
+    crossing
+
+ 以下のオブジェクトは ‘package:tibble’ からマスクされています:
+
+    as_data_frame
+
+ 以下のオブジェクトは ‘package:stats’ からマスクされています:
+
+    decompose, spectrum
+
+ 以下のオブジェクトは ‘package:base’ からマスクされています:
+
+    union
+
+ 警告メッセージ: 
+ パッケージ ‘readxl’ はバージョン 4.3.3 の R の下で造られました  
+
+                                                                GAG 
+                              109                                56 
+                              GPI                               GSL 
+                               24                                19 
+                         N_linked              N_linked/O_glycanNMu 
+                               61                                 1 
+         N_linked/O_glycanNMu/GSL                 N_linked/O_linked 
+                                1                                 7 
+            N_linked/O_linked/GAG             N_linked/O_linked/GSL 
+                                5                                18 
+        N_linked/O_linked/GSL/GAG     N_linked/O_linked/O_glycanNMu 
+                                2                                 4 
+N_linked/O_linked/O_glycanNMu/GAG N_linked/O_linked/O_glycanNMu/GSL 
+                                1                                11 
+                      O_glycanNMu                          O_linked 
+                               32                                29 
+                     O_linked/GSL              O_linked/O_glycanNMu 
+                                5                                 2 
+         O_linked/O_glycanNMu/GSL 
+                                2 
+      enzyme
+1        ABO
+2        ABO
+3       ALG1
+4      ALG10
+5     ALG10B
+6      ALG11
+7      ALG11
+8      ALG12
+9      ALG13
+10     ALG14
+11      ALG2
+12      ALG2
+13      ALG3
+14      ALG5
+15      ALG6
+16      ALG8
+17      ALG9
+18      ALG9
+19  B3GALNT2
+20   B3GALT2
+21    B3GNT2
+22    B3GNT4
+23    B3GNT8
+24  B4GALNT2
+25  B4GALNT2
+26  B4GALNT3
+27  B4GALNT4
+28   B4GALT1
+29   B4GALT1
+30   B4GALT2
+31   B4GALT3
+32   B4GALT4
+33   B4GALT5
+34      CMAS
+35    DPAGT1
+36      DPM1
+37      FPGT
+38      FUT1
+39      FUT1
+40      FUT2
+41      FUT2
+42      FUT3
+43      FUT3
+44      FUT3
+45      FUT4
+46      FUT4
+47      FUT4
+48      FUT5
+49      FUT5
+50      FUT6
+51      FUT6
+52      FUT7
+53      FUT8
+54      FUT9
+55     GANAB
+56     GANAB
+57     GCNT2
+58   GNPNAT1
+59    MAN1A1
+60    MAN1A1
+61    MAN1A1
+62    MAN1A2
+63    MAN1A2
+64    MAN1A2
+65    MAN1B1
+66    MAN1C1
+67    MAN1C1
+68    MAN1C1
+69    MAN2A1
+70    MAN2A1
+71    MAN2A2
+72    MAN2A2
+73     MANBA
+74     MANEA
+75     MANEA
+76     MANEA
+77     MGAT1
+78     MGAT2
+79     MGAT3
+80    MGAT4A
+81    MGAT4B
+82     MGAT5
+83      MOGS
+84      NAGK
+85   ST3GAL3
+86   ST3GAL3
+87   ST3GAL4
+88   ST3GAL6
+89   ST6GAL1
+90   ST6GAL2
+91   ST6GAL2
+92   ST8SIA2
+93   ST8SIA3
+94   ST8SIA4
+95     STT3A
+96     STT3B
+97     UGGT1
+98     UGGT2
+99       ABO
+100      ABO
+101     ALG1
+102    ALG10
+103   ALG10B
+104    ALG12
+105    ALG13
+106    ALG14
+107     ALG2
+108     ALG2
+109     ALG5
+110     ALG6
+111     ALG8
+112     ALG9
+113 B3GALNT2
+114  B3GALT2
+115   B3GNT2
+116   B3GNT4
+117   B3GNT8
+118 B4GALNT2
+119 B4GALNT2
+120 B4GALNT3
+121 B4GALNT4
+122  B4GALT1
+123  B4GALT1
+124  B4GALT2
+125  B4GALT3
+126  B4GALT4
+127  B4GALT5
+128     CMAS
+129     CTBS
+130   DPAGT1
+131     DPM1
+132     FPGT
+133    FUCA1
+134     FUT1
+135     FUT1
+136     FUT2
+137     FUT2
+138     FUT3
+139     FUT4
+140     FUT4
+141     FUT6
+142     FUT6
+143     FUT7
+144     FUT9
+145    GANAB
+146    GANAB
+147    GCNT2
+148  GNPNAT1
+149   MAN1A1
+150   MAN1A2
+151   MAN1C1
+152    MANBA
+153    MANEA
+154    MANEA
+155    MANEA
+156    MGAT2
+157   MGAT4A
+158   MGAT4B
+159   MGAT4C
+160   MGAT4D
+161    MGAT5
+162     MOGS
+163     NAGK
+164     NEU1
+165     NEU1
+166     NEU2
+167     NEU2
+168     NEU3
+169     NEU3
+170     NEU4
+171     NEU4
+172  ST3GAL3
+173  ST3GAL3
+174  ST3GAL3
+175  ST3GAL4
+176  ST3GAL4
+177  ST3GAL6
+178  ST6GAL1
+179  ST6GAL2
+180  ST6GAL2
+181  ST8SIA2
+182  ST8SIA3
+183  ST8SIA4
+184    STT3A
+185    STT3B
+186    UGGT1
+187    UGGT2
+                                                                                                                                     product
+1                                                                                                              GalNAc(a1-3)Fuc(a1-2)Gal(b-?)
+2                                                                                                                 Gal(a1-3)Fuc(a1-2)Gal(b-?)
+3                                                                                                          Man(b1-4)GlcNAc(b1-4)GlcNAc(a1-?)
+4   Man(a1-2)Man(a1-3)[Man(a1-2)Man(a1-6)]Man(a1-6)[Glc(a1-2)Glc(a1-3)Glc(a1-3)Man(a1-2)Man(a1-2)Man(a1-3)]Man(b1-4)GlcNAc(b1-4)GlcNAc(a1-?)
+5   Man(a1-2)Man(a1-3)[Man(a1-2)Man(a1-6)]Man(a1-6)[Glc(a1-2)Glc(a1-3)Glc(a1-3)Man(a1-2)Man(a1-2)Man(a1-3)]Man(b1-4)GlcNAc(b1-4)GlcNAc(a1-?)
+6                                                                             Man(a1-6)[Man(a1-2)Man(a1-3)]Man(b1-4)GlcNAc(b1-4)GlcNAc(a1-?)
+7                                                                    Man(a1-6)[Man(a1-2)Man(a1-2)Man(a1-3)]Man(b1-4)GlcNAc(b1-4)GlcNAc(a1-?)
+8                                       Man(a1-2)Man(a1-3)[Man(a1-6)]Man(a1-6)[Man(a1-2)Man(a1-2)Man(a1-3)]Man(b1-4)GlcNAc(b1-4)GlcNAc(a1-?)
+9                                                                                                                   GlcNAc(b1-4)GlcNAc(a1-?)
+10                                                                                                                  GlcNAc(b1-4)GlcNAc(a1-?)
+11                                                                                                Man(a1-3)Man(b1-4)GlcNAc(b1-4)GlcNAc(a1-?)
+12                                                                                     Man(a1-6)[Man(a1-3)]Man(b1-4)GlcNAc(b1-4)GlcNAc(a1-?)
+13                                                          Man(a1-3)Man(a1-6)[Man(a1-2)Man(a1-2)Man(a1-3)]Man(b1-4)GlcNAc(b1-4)GlcNAc(a1-?)
+14                                                                                                                                       Glc
+15                    Man(a1-2)Man(a1-3)[Man(a1-2)Man(a1-6)]Man(a1-6)[Glc(a1-3)Man(a1-2)Man(a1-2)Man(a1-3)]Man(b1-4)GlcNAc(b1-4)GlcNAc(a1-?)
+16           Man(a1-2)Man(a1-3)[Man(a1-2)Man(a1-6)]Man(a1-6)[Glc(a1-3)Glc(a1-3)Man(a1-2)Man(a1-2)Man(a1-3)]Man(b1-4)GlcNAc(b1-4)GlcNAc(a1-?)
+17                                                 Man(a1-2)Man(a1-3)Man(a1-6)[Man(a1-2)Man(a1-2)Man(a1-3)]Man(b1-4)GlcNAc(b1-4)GlcNAc(a1-?)
+18                             Man(a1-2)Man(a1-3)[Man(a1-2)Man(a1-6)]Man(a1-6)[Man(a1-2)Man(a1-2)Man(a1-3)]Man(b1-4)GlcNAc(b1-4)GlcNAc(a1-?)
+19                                                                                                                  GalNAc(b1-3)GlcNAc(b1-?)
+20                                                                                                                     Gal(b1-3)GalNAc(b1-?)
+21                                                                                                         GlcNAc(b1-3)Gal(b1-3)GlcNAc(b1-?)
+22                                                                                                         GlcNAc(b1-3)Gal(b1-3)GlcNAc(b1-?)
+23                                                                                                         GlcNAc(b1-3)Gal(b1-3)GlcNAc(b1-?)
+24                                                                                           Neu5Ac(a2-3)[GalNAc(b1-4)]Gal(b1-?)GlcNAc(b1-?)
+25                                                                                           Neu5Ac(a2-3)[GalNAc(b1-4)]Gal(b1-?)GalNAc(a1-?)
+26                                                                                                                  GalNAc(b1-4)GlcNAc(b1-?)
+27                                                                                                                  GalNAc(b1-4)GlcNAc(b1-?)
+28                                                                                                                     Gal(b1-4)GlcNAc(b1-?)
+29                                                                                                                        Gal(b1-4)Glc(b1-?)
+30                                                                                                                     Gal(b1-4)GlcNAc(b1-?)
+31                                                                                                                     Gal(b1-4)GlcNAc(b1-?)
+32                                                                                                                     Gal(b1-4)GlcNAc(b1-?)
+33                                                                                                                     Gal(b1-4)GlcNAc(b1-?)
+34                                                                                                                                    Neu5Ac
+35                                                                                                                              GlcNAc(a1-?)
+36                                                                                                                                       Man
+37                                                                                                                                       Fuc
+38                                                                                                            Fuc(a1-2)Gal(b1-?)GalNAc(b1-?)
+39                                                                                                            Fuc(a1-2)Gal(b1-?)GlcNAc(b1-?)
+40                                                                                                            Fuc(a1-2)Gal(b1-?)GalNAc(b1-?)
+41                                                                                                            Fuc(a1-2)Gal(b1-?)GlcNAc(b1-?)
+42                                                                                                          Gal(b1-4)[Fuc(a1-3)]GlcNAc(b1-?)
+43                                                                                                          Gal(b1-3)[Fuc(a1-4)]GlcNAc(b1-?)
+44                                                                                                       GalNAc(b1-3)[Fuc(a1-4)]GlcNAc(b1-?)
+45                                                                                                          Gal(b1-4)[Fuc(a1-3)]GlcNAc(b1-?)
+46                                                                                     Gal(b1-3)GlcNAc(b1-?)Gal(b1-4)[Fuc(a1-3)]GlcNAc(b1-?)
+47                                                                   Neu5Ac(a2-3)GalNAc(b1-3)GlcNAc(b1-?)GalNAc(b1-3)[Fuc(a1-3)]GlcNAc(b1-?)
+48                                                                                                           Gal(b-?)[Fuc(a1-3)]GlcNAc(b1-?)
+49                                                                                                           Gal(b-?)[Fuc(a1-4)]GlcNAc(b1-?)
+50                                                                                              Neu5Ac(a2-3)Gal(b1-3)[Fuc(a1-3)]GlcNAc(b1-4)
+51                                                                                                          Gal(b1-3)[Fuc(a1-3)]GlcNAc(b1-4)
+52                                                                                              Neu5Ac(a2-3)Gal(b1-3)[Fuc(a1-3)]GlcNAc(b1-4)
+53                                                                                                       GlcNAc(b1-4)[Fuc(a1-6)]GlcNAc(b1-?)
+54                                                                                                          Gal(b1-4)[Fuc(a1-3)]GlcNAc(b1-?)
+55                    Man(a1-2)Man(a1-3)[Man(a1-2)Man(a1-6)]Man(a1-6)[Glc(a1-3)Man(a1-2)Man(a1-2)Man(a1-3)]Man(b1-4)GlcNAc(b1-4)GlcNAc(a1-?)
+56                             Man(a1-2)Man(a1-3)[Man(a1-2)Man(a1-6)]Man(a1-6)[Man(a1-2)Man(a1-2)Man(a1-3)]Man(b1-4)GlcNAc(b1-4)GlcNAc(a1-?)
+57                                                                                  Gal(b1-4)GlcNAc(b1-3)[GlcNAc(b1-6)]Gal(b1-4)GlcNAc(b1-?)
+58                                                                                                                                    GlcNAc
+59                                               Man(a1-3)[Man(a1-2)Man(a1-6)]Man(a1-6)[Man(a1-2)Man(a1-3)]Man(b1-4)GlcNAc(b1-4)GlcNAc(a1-?)
+60                                                        Man(a1-3)[Man(a1-6)]Man(a1-6)[Man(a1-2)Man(a1-3)]Man(b1-4)GlcNAc(b1-4)GlcNAc(a1-?)
+61                                                                 Man(a1-3)[Man(a1-6)]Man(a1-6)[Man(a1-3)]Man(b1-4)GlcNAc(b1-4)GlcNAc(a1-?)
+62                                               Man(a1-3)[Man(a1-2)Man(a1-6)]Man(a1-6)[Man(a1-2)Man(a1-3)]Man(b1-4)GlcNAc(b1-4)GlcNAc(a1-?)
+63                                                        Man(a1-3)[Man(a1-6)]Man(a1-6)[Man(a1-2)Man(a1-3)]Man(b1-4)GlcNAc(b1-4)GlcNAc(a1-?)
+64                                                                 Man(a1-3)[Man(a1-6)]Man(a1-6)[Man(a1-3)]Man(b1-4)GlcNAc(b1-4)GlcNAc(a1-?)
+65                                      Man(a1-3)[Man(a1-2)Man(a1-6)]Man(a1-6)[Man(a1-2)Man(a1-2)Man(a1-3)]Man(b1-4)GlcNAc(b1-4)GlcNAc(a1-?)
+66                                               Man(a1-3)[Man(a1-2)Man(a1-6)]Man(a1-6)[Man(a1-2)Man(a1-3)]Man(b1-4)GlcNAc(b1-4)GlcNAc(a1-?)
+67                                                        Man(a1-3)[Man(a1-6)]Man(a1-6)[Man(a1-2)Man(a1-3)]Man(b1-4)GlcNAc(b1-4)GlcNAc(a1-?)
+68                                                                 Man(a1-3)[Man(a1-6)]Man(a1-6)[Man(a1-3)]Man(b1-4)GlcNAc(b1-4)GlcNAc(a1-?)
+69                                                                Man(a1-6)Man(a1-6)[GlcNAc(b1-2)Man(a1-3)]Man(b1-4)GlcNAc(b1-4)GlcNAc(a1-?)
+70                                                                         Man(a1-6)[GlcNAc(b1-2)Man(a1-3)]Man(b1-4)GlcNAc(b1-4)GlcNAc(a1-?)
+71                                                                Man(a1-6)Man(a1-6)[GlcNAc(b1-2)Man(a1-3)]Man(b1-4)GlcNAc(b1-4)GlcNAc(a1-?)
+72                                                                         Man(a1-6)[GlcNAc(b1-2)Man(a1-3)]Man(b1-4)GlcNAc(b1-4)GlcNAc(a1-?)
+73                                                                                                                                       Man
+74                                      Man(a1-2)Man(a1-3)[Man(a1-2)Man(a1-6)]Man(a1-6)[Man(a1-2)Man(a1-3)]Man(b1-4)GlcNAc(b1-4)GlcNAc(a1-?)
+75                                      Man(a1-2)Man(a1-3)[Man(a1-2)Man(a1-6)]Man(a1-6)[Man(a1-2)Man(a1-3)]Man(b1-4)GlcNAc(b1-4)GlcNAc(a1-?)
+76                                      Man(a1-2)Man(a1-3)[Man(a1-2)Man(a1-6)]Man(a1-6)[Man(a1-2)Man(a1-3)]Man(b1-4)GlcNAc(b1-4)GlcNAc(a1-?)
+77                                                     Man(a1-3)[Man(a1-6)]Man(a1-6)[GlcNAc(b1-2)Man(a1-3)]Man(b1-4)GlcNAc(b1-4)GlcNAc(a1-?)
+78                                                             GlcNAc(b1-2)Man(a1-6)[GlcNAc(b1-2)Man(a1-3)]Man(b1-4)GlcNAc(b1-4)GlcNAc(a1-?)
+79                                               GlcNAc(b1-2)Man(a1-6)[GlcNAc(b1-2)Man(a1-3)][GlcNAc(b1-4)]Man(b1-4)GlcNAc(b1-4)GlcNAc(a1-?)
+80                                               GlcNAc(b1-2)Man(a1-6)[GlcNAc(b1-2)[GlcNAc(b1-4)]Man(a1-3)]Man(b1-4)GlcNAc(b1-4)GlcNAc(a1-?)
+81                                               GlcNAc(b1-2)Man(a1-6)[GlcNAc(b1-2)[GlcNAc(b1-4)]Man(a1-3)]Man(b1-4)GlcNAc(b1-4)GlcNAc(a1-?)
+82                                 GlcNAc(b1-2)[GlcNAc(b1-6)]Man(a1-6)[GlcNAc(b1-2)[GlcNAc(b1-4)]Man(a1-3)]Man(b1-4)GlcNAc(b1-4)GlcNAc(a1-?)
+83           Man(a1-2)Man(a1-3)[Man(a1-2)Man(a1-6)]Man(a1-6)[Glc(a1-3)Glc(a1-3)Man(a1-2)Man(a1-2)Man(a1-3)]Man(b1-4)GlcNAc(b1-4)GlcNAc(a1-?)
+84                                                                                                                                    GlcNAc
+85                                                                                                         Neu5Ac(a2-3)Gal(b1-3)GlcNAc(b1-?)
+86                                                                                                         Neu5Ac(a2-3)Gal(b1-4)GlcNAc(b1-?)
+87                                                                                                         Neu5Ac(a2-3)Gal(b1-4)GlcNAc(b1-?)
+88                                                                                                         Neu5Ac(a2-3)Gal(b1-4)GlcNAc(b1-?)
+89                                                                                                         Neu5Ac(a2-6)Gal(b1-4)GlcNAc(b1-?)
+90                                                                                                      Neu5Ac(a2-6)GalNAc(b1-4)GlcNAc(b1-?)
+91                                                                                                         Neu5Ac(a2-6)Gal(b1-4)GlcNAc(b1-?)
+92                                                                                                                  Neu5Ac(a2-8)Neu5Ac(a2-?)
+93                                                                                                                  Neu5Ac(a2-8)Neu5Ac(a2-?)
+94                                                                                                                  Neu5Ac(a2-8)Neu5Ac(a2-?)
+95  Man(a1-2)Man(a1-3)[Man(a1-2)Man(a1-6)]Man(a1-6)[Glc(a1-2)Glc(a1-3)Glc(a1-3)Man(a1-2)Man(a1-2)Man(a1-3)]Man(b1-4)GlcNAc(b1-4)GlcNAc(a1-?)
+96  Man(a1-2)Man(a1-3)[Man(a1-2)Man(a1-6)]Man(a1-6)[Glc(a1-2)Glc(a1-3)Glc(a1-3)Man(a1-2)Man(a1-2)Man(a1-3)]Man(b1-4)GlcNAc(b1-4)GlcNAc(a1-?)
+97                    Man(a1-2)Man(a1-3)[Man(a1-2)Man(a1-6)]Man(a1-6)[Glc(a1-3)Man(a1-2)Man(a1-2)Man(a1-3)]Man(b1-4)GlcNAc(b1-4)GlcNAc(a1-?)
+98                    Man(a1-2)Man(a1-3)[Man(a1-2)Man(a1-6)]Man(a1-6)[Glc(a1-3)Man(a1-2)Man(a1-2)Man(a1-3)]Man(b1-4)GlcNAc(b1-4)GlcNAc(a1-?)
+99                                                                                                          Fuc(a1-2)[GalNAc(a1-3)]Gal(b1-?)
+100                                                                                                            Fuc(a1-2)[Gal(a1-3)]Gal(b1-?)
+101                                                                                                        Man(b1-4)GlcNAc(b1-4)GlcNAc(a1-?)
+102                                                                                   Glc(a1-2)Glc(a1-3)Glc(a1-3)Man(a1-2)Man(a1-2)Man(a1-3)
+103                                                                                   Glc(a1-2)Glc(a1-3)Glc(a1-3)Man(a1-2)Man(a1-2)Man(a1-3)
+104                                                                                                   Man(a1-2)Man(a1-3)[Man(a1-6)]Man(a1-6)
+105                                                                                                                 GlcNAc(b1-4)GlcNAc(a1-?)
+106                                                                                                                 GlcNAc(b1-4)GlcNAc(a1-?)
+107                                                                                               Man(a1-3)Man(b1-4)GlcNAc(b1-4)GlcNAc(a1-?)
+108                                                                                    Man(a1-3)[Man(a1-6)]Man(b1-4)GlcNAc(b1-4)GlcNAc(a1-?)
+109                                                                                                                                Glc(a1-?)
+110                                                                                                     Glc(a1-3)Man(a1-2)Man(a1-2)Man(a1-3)
+111                                                                                            Glc(a1-3)Glc(a1-3)Man(a1-2)Man(a1-2)Man(a1-3)
+112                                                                                                              Man(a1-2)Man(a1-3)Man(a1-6)
+113                                                                                                                 GalNAc(b1-3)GlcNAc(b1-?)
+114                                                                                                                    Gal(b1-3)GlcNAc(b1-?)
+115                                                                                                        GlcNAc(b1-3)Gal(b1-4)GlcNAc(b1-?)
+116                                                                                                                    GlcNAc(b1-3)Gal(b1-?)
+117                                                                                                        GlcNAc(b1-3)Gal(b1-4)GlcNAc(b1-?)
+118                                                                                          Neu5Ac(a2-3)[GalNAc(b1-4)]Gal(b1-?)GlcNAc(b1-?)
+119                                                                                          Neu5Ac(a2-3)[GalNAc(b1-4)]Gal(b1-?)GalNAc(a1-?)
+120                                                                                                                 GalNAc(b1-4)GlcNAc(b1-?)
+121                                                                                                                 GalNAc(b1-4)GlcNAc(b1-?)
+122                                                                                                                    Gal(b1-4)GlcNAc(b1-?)
+123                                                                                                                       Gal(b1-4)Glc(b1-?)
+124                                                                                                                    Gal(b1-4)GlcNAc(b1-?)
+125                                                                                                                    Gal(b1-4)GlcNAc(b1-?)
+126                                                                                                                    Gal(b1-4)GlcNAc(b1-?)
+127                                                                                                                    Gal(b1-4)GlcNAc(b1-?)
+128                                                                                                                                   Neu5Ac
+129                                                                                                                             GlcNAc(b1-?)
+130                                                                                                                             GlcNAc(a1-?)
+131                                                                                                                                Man(a1-?)
+132                                                                                                                                      Fuc
+133                                                                                                                              GlcNAc(b1-?
+134                                                                                                           Fuc(a1-2)Gal(b1-?)GalNAc(b1-?)
+135                                                                                                           Fuc(a1-2)Gal(b1-?)GlcNAc(b1-?)
+136                                                                                                           Fuc(a1-2)Gal(b1-?)GalNAc(b1-?)
+137                                                                                                           Fuc(a1-2)Gal(b1-?)GlcNAc(b1-?)
+138                                                                                                      GalNAc(b1-3)[Fuc(a1-4)]GlcNAc(b1-?)
+139                                                                                                         Gal(b1-4)[Fuc(a1-3)]GlcNAc(b1-?)
+140                                                                                             Neu5Ac(a2-3)Gal(b1-4)[Fuc(a1-3)]GlcNAc(b1-?)
+141                                                                                                         Gal(b1-4)[Fuc(a1-3)]GlcNAc(b1-?)
+142                                                                                             Neu5Ac(a2-3)Gal(b1-4)[Fuc(a1-3)]GlcNAc(b1-?)
+143                                                                                             Neu5Ac(a2-3)Gal(b1-4)[Fuc(a1-3)]GlcNAc(b1-?)
+144                                                                                                         Gal(b1-4)[Fuc(a1-3)]GlcNAc(b1-?)
+145                                                                                                                                Man(a1-2)
+146                                                                                                                       Glc(a1-3)Man(a1-2)
+147                                                                                 Gal(b1-4)GlcNAc(b1-3)[GlcNAc(b1-6)]Gal(b1-4)GlcNAc(b1-?)
+148                                                                                                                                   GlcNAc
+149                                                                                                                                Man(a1-?)
+150                                                                                                                                Man(a1-?)
+151                                                                                                                                Man(a1-?)
+152                                                                                                                             GlcNAc(b1-?)
+153                                                                                                              Man(a1-2)Man(a1-2)Man(a1-3)
+154                                                                                                              Man(a1-2)Man(a1-2)Man(a1-3)
+155                                                                                                              Man(a1-2)Man(a1-2)Man(a1-3)
+156                                                                                                                    GlcNAc(b1-2)Man(a1-6)
+157                                                                                                      GlcNAc(b1-2)[GlcNAc(b1-4)]Man(a1-3)
+158                                                                                                      GlcNAc(b1-2)[GlcNAc(b1-4)]Man(a1-3)
+159                                                                                                      GlcNAc(b1-2)[GlcNAc(b1-4)]Man(a1-3)
+160                                                                                                      GlcNAc(b1-2)[GlcNAc(b1-4)]Man(a1-3)
+161                                                                                                      GlcNAc(b1-2)[GlcNAc(b1-6)]Man(a1-6)
+162                                                                                                              Glc(a1-3)Glc(a1-3)Man(a1-2)
+163                                                                                                                                   GlcNAc
+164                                                                                                                                Gal(b1-?)
+165                                                                                                                             Neu5Ac(a2-?)
+166                                                                                                                                Gal(b1-?)
+167                                                                                                                             Neu5Ac(a2-?)
+168                                                                                                                                Gal(b1-?)
+169                                                                                                                             Neu5Ac(a2-?)
+170                                                                                                                                Gal(b1-?)
+171                                                                                                                             Neu5Ac(a2-?)
+172                                                                                                        Neu5Ac(a2-3)Gal(b1-4)GlcNAc(b1-?)
+173                                                                                                        Neu5Ac(a2-3)Gal(b1-3)GlcNAc(b1-?)
+174                                                                                                        Neu5Ac(a2-3)Gal(b1-3)GalNAc(b1-?)
+175                                                                                                        Neu5Ac(a2-3)Gal(b1-?)GlcNAc(b1-?)
+176                                                                                                        Neu5Ac(a2-3)Gal(b1-3)GalNAc(b1-?)
+177                                                                                                        Neu5Ac(a2-3)Gal(b1-4)GlcNAc(b1-?)
+178                                                                                                        Neu5Ac(a2-6)Gal(b1-4)GlcNAc(b1-?)
+179                                                                                                     Neu5Ac(a2-6)GalNAc(b1-4)GlcNAc(b1-?)
+180                                                                                                        Neu5Ac(a2-6)Gal(b1-4)GlcNAc(b1-?)
+181                                                                                                                 Neu5Ac(a2-8)Neu5Ac(a2-?)
+182                                                                                                                 Neu5Ac(a2-8)Neu5Ac(a2-3)
+183                                                                                                                 Neu5Ac(a2-8)Neu5Ac(a2-?)
+184           Glc(a1-2)Glc(a1-3)Man(a1-2)Man(a1-2)Man(a1-3)[Man(a1-2)Man(a1-6)[Man(a1-2)Man(a1-3)]Man(a1-6)]Man(b1-4)GlcNAc(b1-4)GlcNAc(b1-?
+185           Glc(a1-2)Glc(a1-3)Man(a1-2)Man(a1-2)Man(a1-3)[Man(a1-2)Man(a1-6)[Man(a1-2)Man(a1-3)]Man(a1-6)]Man(b1-4)GlcNAc(b1-4)GlcNAc(b1-?
+186                                                                                                     Glc(a1-3)Man(a1-2)Man(a1-2)Man(a1-3)
+187                                                                                                     Glc(a1-3)Man(a1-2)Man(a1-2)Man(a1-3)
+                                                                                                                                    reactant
+1                                                                                                                          Fuc(a1-2)Gal(b-?)
+2                                                                                                                          Fuc(a1-2)Gal(b-?)
+3                                                                                                                   GlcNAc(b1-4)GlcNAc(a1-?)
+4            Man(a1-2)Man(a1-3)[Man(a1-2)Man(a1-6)]Man(a1-6)[Glc(a1-3)Glc(a1-3)Man(a1-2)Man(a1-2)Man(a1-3)]Man(b1-4)GlcNAc(b1-4)GlcNAc(a1-?)
+5            Man(a1-2)Man(a1-3)[Man(a1-2)Man(a1-6)]Man(a1-6)[Glc(a1-3)Glc(a1-3)Man(a1-2)Man(a1-2)Man(a1-3)]Man(b1-4)GlcNAc(b1-4)GlcNAc(a1-?)
+6                                                                                      Man(a1-6)[Man(a1-3)]Man(b1-4)GlcNAc(b1-4)GlcNAc(a1-?)
+7                                                                             Man(a1-6)[Man(a1-2)Man(a1-3)]Man(b1-4)GlcNAc(b1-4)GlcNAc(a1-?)
+8                                                  Man(a1-2)Man(a1-3)Man(a1-6)[Man(a1-2)Man(a1-2)Man(a1-3)]Man(b1-4)GlcNAc(b1-4)GlcNAc(a1-?)
+9                                                                                                                               GlcNAc(a1-?)
+10                                                                                                                              GlcNAc(a1-?)
+11                                                                                                         Man(b1-4)GlcNAc(b1-4)GlcNAc(a1-?)
+12                                                                                                Man(a1-3)Man(b1-4)GlcNAc(b1-4)GlcNAc(a1-?)
+13                                                                   Man(a1-6)[Man(a1-2)Man(a1-2)Man(a1-3)]Man(b1-4)GlcNAc(b1-4)GlcNAc(a1-?)
+14                                                                                                                                          
+15                             Man(a1-2)Man(a1-3)[Man(a1-2)Man(a1-6)]Man(a1-6)[Man(a1-2)Man(a1-2)Man(a1-3)]Man(b1-4)GlcNAc(b1-4)GlcNAc(a1-?)
+16                    Man(a1-2)Man(a1-3)[Man(a1-2)Man(a1-6)]Man(a1-6)[Glc(a1-3)Man(a1-2)Man(a1-2)Man(a1-3)]Man(b1-4)GlcNAc(b1-4)GlcNAc(a1-?)
+17                                                          Man(a1-3)Man(a1-6)[Man(a1-2)Man(a1-2)Man(a1-3)]Man(b1-4)GlcNAc(b1-4)GlcNAc(a1-?)
+18                                      Man(a1-2)Man(a1-3)[Man(a1-6)]Man(a1-6)[Man(a1-2)Man(a1-2)Man(a1-3)]Man(b1-4)GlcNAc(b1-4)GlcNAc(a1-?)
+19                                                                                                                              GlcNAc(b1-?)
+20                                                                                                                              GalNAc(b1-?)
+21                                                                                                                     Gal(b1-3)GlcNAc(b1-?)
+22                                                                                                                     Gal(b1-3)GlcNAc(b1-?)
+23                                                                                                                     Gal(b1-3)GlcNAc(b1-?)
+24                                                                                                         Neu5Ac(a2-3)Gal(b1-?)GlcNAc(b1-?)
+25                                                                                                         Neu5Ac(a2-3)Gal(b1-?)GalNAc(a1-?)
+26                                                                                                                              GlcNAc(b1-?)
+27                                                                                                                              GlcNAc(b1-?)
+28                                                                                                                              GlcNAc(b1-?)
+29                                                                                                                                 Glc(b1-?)
+30                                                                                                                              GlcNAc(b1-?)
+31                                                                                                                              GlcNAc(b1-?)
+32                                                                                                                              GlcNAc(b1-?)
+33                                                                                                                              GlcNAc(b1-?)
+34                                                                                                                                    Neu5Ac
+35                                                                                                                                          
+36                                                                                                                                          
+37                                                                                                                                     Fuc1P
+38                                                                                                                     Gal(b1-?)GalNAc(b1-?)
+39                                                                                                                     Gal(b1-?)GlcNAc(b1-?)
+40                                                                                                                     Gal(b1-?)GalNAc(b1-?)
+41                                                                                                                     Gal(b1-?)GlcNAc(b1-?)
+42                                                                                                                     Gal(b1-4)GlcNAc(b1-?)
+43                                                                                                                     Gal(b1-3)GlcNAc(b1-?)
+44                                                                                                                  GalNAc(b1-3)GlcNAc(b1-?)
+45                                                                                                                     Gal(b1-4)GlcNAc(b1-?)
+46                                                                                                Gal(b1-3)GlcNAc(b1-?)Gal(b1-4)GlcNAc(b1-?)
+47                                                                              Neu5Ac(a2-3)GalNAc(b1-3)GlcNAc(b1-?)GalNAc(b1-3)GlcNAc(b1-?)
+48                                                                                                                      Gal(b-?)GlcNAc(b1-?)
+49                                                                                                                      Gal(b-?)GlcNAc(b1-?)
+50                                                                                                         Neu5Ac(a2-3)Gal(b1-3)GlcNAc(b1-4)
+51                                                                                                                     Gal(b1-3)GlcNAc(b1-4)
+52                                                                                                         Neu5Ac(a2-3)Gal(b1-3)GlcNAc(b1-4)
+53                                                                                                                  GlcNAc(b1-4)GlcNAc(b1-?)
+54                                                                                                                     Gal(b1-4)GlcNAc(b1-?)
+55           Man(a1-2)Man(a1-3)[Man(a1-2)Man(a1-6)]Man(a1-6)[Glc(a1-3)Glc(a1-3)Man(a1-2)Man(a1-2)Man(a1-3)]Man(b1-4)GlcNAc(b1-4)GlcNAc(a1-?)
+56                    Man(a1-2)Man(a1-3)[Man(a1-2)Man(a1-6)]Man(a1-6)[Glc(a1-3)Man(a1-2)Man(a1-2)Man(a1-3)]Man(b1-4)GlcNAc(b1-4)GlcNAc(a1-?)
+57                                                                                                Gal(b1-4)GlcNAc(b1-3)Gal(b1-4)GlcNAc(b1-?)
+58                                                                                                                                      GlcN
+59                                      Man(a1-3)[Man(a1-2)Man(a1-6)]Man(a1-6)[Man(a1-2)Man(a1-2)Man(a1-3)]Man(b1-4)GlcNAc(b1-4)GlcNAc(a1-?)
+60                                               Man(a1-3)[Man(a1-2)Man(a1-6)]Man(a1-6)[Man(a1-2)Man(a1-3)]Man(b1-4)GlcNAc(b1-4)GlcNAc(a1-?)
+61                                                        Man(a1-3)[Man(a1-6)]Man(a1-6)[Man(a1-2)Man(a1-3)]Man(b1-4)GlcNAc(b1-4)GlcNAc(a1-?)
+62                                      Man(a1-3)[Man(a1-2)Man(a1-6)]Man(a1-6)[Man(a1-2)Man(a1-2)Man(a1-3)]Man(b1-4)GlcNAc(b1-4)GlcNAc(a1-?)
+63                                               Man(a1-3)[Man(a1-2)Man(a1-6)]Man(a1-6)[Man(a1-2)Man(a1-3)]Man(b1-4)GlcNAc(b1-4)GlcNAc(a1-?)
+64                                                        Man(a1-3)[Man(a1-6)]Man(a1-6)[Man(a1-2)Man(a1-3)]Man(b1-4)GlcNAc(b1-4)GlcNAc(a1-?)
+65                             Man(a1-2)Man(a1-3)[Man(a1-2)Man(a1-6)]Man(a1-6)[Man(a1-2)Man(a1-2)Man(a1-3)]Man(b1-4)GlcNAc(b1-4)GlcNAc(a1-?)
+66                                      Man(a1-3)[Man(a1-2)Man(a1-6)]Man(a1-6)[Man(a1-2)Man(a1-2)Man(a1-3)]Man(b1-4)GlcNAc(b1-4)GlcNAc(a1-?)
+67                                               Man(a1-3)[Man(a1-2)Man(a1-6)]Man(a1-6)[Man(a1-2)Man(a1-3)]Man(b1-4)GlcNAc(b1-4)GlcNAc(a1-?)
+68                                                        Man(a1-3)[Man(a1-6)]Man(a1-6)[Man(a1-2)Man(a1-3)]Man(b1-4)GlcNAc(b1-4)GlcNAc(a1-?)
+69                                                     Man(a1-3)[Man(a1-6)]Man(a1-6)[GlcNAc(b1-2)Man(a1-3)]Man(b1-4)GlcNAc(b1-4)GlcNAc(a1-?)
+70                                                                Man(a1-6)Man(a1-6)[GlcNAc(b1-2)Man(a1-3)]Man(b1-4)GlcNAc(b1-4)GlcNAc(a1-?)
+71                                                     Man(a1-3)[Man(a1-6)]Man(a1-6)[GlcNAc(b1-2)Man(a1-3)]Man(b1-4)GlcNAc(b1-4)GlcNAc(a1-?)
+72                                                                Man(a1-6)Man(a1-6)[GlcNAc(b1-2)Man(a1-3)]Man(b1-4)GlcNAc(b1-4)GlcNAc(a1-?)
+73                                                                                                                     Man(b1-4)GlcNAc(b1-?)
+74           Man(a1-2)Man(a1-3)[Man(a1-2)Man(a1-6)]Man(a1-6)[Glc(a1-3)Glc(a1-3)Man(a1-2)Man(a1-2)Man(a1-3)]Man(b1-4)GlcNAc(b1-4)GlcNAc(a1-?)
+75                    Man(a1-2)Man(a1-3)[Man(a1-2)Man(a1-6)]Man(a1-6)[Glc(a1-3)Man(a1-2)Man(a1-2)Man(a1-3)]Man(b1-4)GlcNAc(b1-4)GlcNAc(a1-?)
+76                             Man(a1-2)Man(a1-3)[Man(a1-2)Man(a1-6)]Man(a1-6)[Man(a1-2)Man(a1-2)Man(a1-3)]Man(b1-4)GlcNAc(b1-4)GlcNAc(a1-?)
+77                                                                 Man(a1-3)[Man(a1-6)]Man(a1-6)[Man(a1-3)]Man(b1-4)GlcNAc(b1-4)GlcNAc(a1-?)
+78                                                                         Man(a1-6)[GlcNAc(b1-2)Man(a1-3)]Man(b1-4)GlcNAc(b1-4)GlcNAc(a1-?)
+79                                                             GlcNAc(b1-2)Man(a1-6)[GlcNAc(b1-2)Man(a1-3)]Man(b1-4)GlcNAc(b1-4)GlcNAc(a1-?)
+80                                                             GlcNAc(b1-2)Man(a1-6)[GlcNAc(b1-2)Man(a1-3)]Man(b1-4)GlcNAc(b1-4)GlcNAc(a1-?)
+81                                                             GlcNAc(b1-2)Man(a1-6)[GlcNAc(b1-2)Man(a1-3)]Man(b1-4)GlcNAc(b1-4)GlcNAc(a1-?)
+82                                               GlcNAc(b1-2)Man(a1-6)[GlcNAc(b1-2)[GlcNAc(b1-4)]Man(a1-3)]Man(b1-4)GlcNAc(b1-4)GlcNAc(a1-?)
+83  Man(a1-2)Man(a1-3)[Man(a1-2)Man(a1-6)]Man(a1-6)[Glc(a1-2)Glc(a1-3)Glc(a1-3)Man(a1-2)Man(a1-2)Man(a1-3)]Man(b1-4)GlcNAc(b1-4)GlcNAc(a1-?)
+84                                                                                                                                    GlcNAc
+85                                                                                                                     Gal(b1-3)GlcNAc(b1-?)
+86                                                                                                                     Gal(b1-4)GlcNAc(b1-?)
+87                                                                                                                     Gal(b1-4)GlcNAc(b1-?)
+88                                                                                                                     Gal(b1-4)GlcNAc(b1-?)
+89                                                                                                                     Gal(b1-4)GlcNAc(b1-?)
+90                                                                                                                  GalNAc(b1-4)GlcNAc(b1-?)
+91                                                                                                                     Gal(b1-4)GlcNAc(b1-?)
+92                                                                                                                              Neu5Ac(a2-?)
+93                                                                                                                              Neu5Ac(a2-?)
+94                                                                                                                              Neu5Ac(a2-?)
+95                                                                                                                                          
+96                                                                                                                                          
+97                             Man(a1-2)Man(a1-3)[Man(a1-2)Man(a1-6)]Man(a1-6)[Man(a1-2)Man(a1-2)Man(a1-3)]Man(b1-4)GlcNAc(b1-4)GlcNAc(a1-?)
+98                             Man(a1-2)Man(a1-3)[Man(a1-2)Man(a1-6)]Man(a1-6)[Man(a1-2)Man(a1-2)Man(a1-3)]Man(b1-4)GlcNAc(b1-4)GlcNAc(a1-?)
+99                                                                                                                        Fuc(a1-2)Gal(b1-?)
+100                                                                                                                       Fuc(a1-2)Gal(b1-?)
+101                                                                                                                 GlcNAc(b1-4)GlcNAc(a1-?)
+102                                                                                            Glc(a1-3)Glc(a1-3)Man(a1-2)Man(a1-2)Man(a1-3)
+103                                                                                            Glc(a1-3)Glc(a1-3)Man(a1-2)Man(a1-2)Man(a1-3)
+104                                                                                                              Man(a1-2)Man(a1-3)Man(a1-6)
+105                                                                                                                             GlcNAc(a1-?)
+106                                                                                                                             GlcNAc(a1-?)
+107                                                                                                        Man(b1-4)GlcNAc(b1-4)GlcNAc(a1-?)
+108                                                                                               Man(a1-3)Man(b1-4)GlcNAc(b1-4)GlcNAc(a1-?)
+109                                                                                                                                         
+110                                                                                                              Man(a1-2)Man(a1-2)Man(a1-3)
+111                                                                                                     Glc(a1-3)Man(a1-2)Man(a1-2)Man(a1-3)
+112                                                                                                                       Man(a1-3)Man(a1-6)
+113                                                                                                                             GlcNAc(b1-?)
+114                                                                                                                             GlcNAc(b1-?)
+115                                                                                                                    Gal(b1-4)GlcNAc(b1-?)
+116                                                                                                                                Gal(b1-?)
+117                                                                                                                    Gal(b1-4)GlcNAc(b1-?)
+118                                                                                                        Neu5Ac(a2-3)Gal(b1-?)GlcNAc(b1-?)
+119                                                                                                        Neu5Ac(a2-3)Gal(b1-?)GalNAc(a1-?)
+120                                                                                                                             GlcNAc(b1-?)
+121                                                                                                                             GlcNAc(b1-?)
+122                                                                                                                             GlcNAc(b1-?)
+123                                                                                                                                Glc(b1-?)
+124                                                                                                                             GlcNAc(b1-?)
+125                                                                                                                             GlcNAc(b1-?)
+126                                                                                                                             GlcNAc(b1-?)
+127                                                                                                                             GlcNAc(b1-?)
+128                                                                                                                                   Neu5Ac
+129                                                                                                                  GlcNAc(b1-4)GlcNAc(b1-?
+130                                                                                                                                         
+131                                                                                                                                         
+132                                                                                                                                    Fuc1P
+133                                                                                                                     Fuc(a1-6)GlcNAc(b1-?
+134                                                                                                                    Gal(b1-?)GalNAc(b1-?)
+135                                                                                                                    Gal(b1-?)GlcNAc(b1-?)
+136                                                                                                                    Gal(b1-?)GalNAc(b1-?)
+137                                                                                                                    Gal(b1-?)GlcNAc(b1-?)
+138                                                                                                                 GalNAc(b1-3)GlcNAc(b1-?)
+139                                                                                                                    Gal(b1-4)GlcNAc(b1-?)
+140                                                                                                        Neu5Ac(a2-3)Gal(b1-4)GlcNAc(b1-?)
+141                                                                                                                    Gal(b1-4)GlcNAc(b1-?)
+142                                                                                                        Neu5Ac(a2-3)Gal(b1-4)GlcNAc(b1-?)
+143                                                                                                        Neu5Ac(a2-3)Gal(b1-4)GlcNAc(b1-?)
+144                                                                                                                    Gal(b1-4)GlcNAc(b1-?)
+145                                                                                                                       Glc(a1-3)Man(a1-2)
+146                                                                                                              Glc(a1-3)Glc(a1-3)Man(a1-2)
+147                                                                                               Gal(b1-4)GlcNAc(b1-3)Gal(b1-4)GlcNAc(b1-?)
+148                                                                                                                                     GlcN
+149                                                                                                                       Man(a1-2)Man(a1-?)
+150                                                                                                                       Man(a1-2)Man(a1-?)
+151                                                                                                                       Man(a1-2)Man(a1-?)
+152                                                                                                                    Man(b1-4)GlcNAc(b1-?)
+153                                                                                   Glc(a1-2)Glc(a1-3)Glc(a1-3)Man(a1-2)Man(a1-2)Man(a1-3)
+154                                                                                            Glc(a1-3)Glc(a1-3)Man(a1-2)Man(a1-2)Man(a1-3)
+155                                                                                                     Glc(a1-3)Man(a1-2)Man(a1-2)Man(a1-3)
+156                                                                                                                                Man(a1-6)
+157                                                                                                                    GlcNAc(b1-2)Man(a1-3)
+158                                                                                                                    GlcNAc(b1-2)Man(a1-3)
+159                                                                                                                    GlcNAc(b1-2)Man(a1-3)
+160                                                                                                                    GlcNAc(b1-2)Man(a1-3)
+161                                                                                                                    GlcNAc(b1-2)Man(a1-6)
+162                                                                                                     Glc(a1-2)Glc(a1-3)Glc(a1-3)Man(a1-2)
+163                                                                                                                                   GlcNAc
+164                                                                                                                    Neu5Ac(a2-?)Gal(b1-?)
+165                                                                                                                 Neu5Ac(a2-?)Neu5Ac(a2-?)
+166                                                                                                                    Neu5Ac(a2-?)Gal(b1-?)
+167                                                                                                                 Neu5Ac(a2-?)Neu5Ac(a2-?)
+168                                                                                                                    Neu5Ac(a2-?)Gal(b1-?)
+169                                                                                                                 Neu5Ac(a2-?)Neu5Ac(a2-?)
+170                                                                                                                    Neu5Ac(a2-?)Gal(b1-?)
+171                                                                                                                 Neu5Ac(a2-?)Neu5Ac(a2-?)
+172                                                                                                                    Gal(b1-4)GlcNAc(b1-?)
+173                                                                                                                    Gal(b1-3)GlcNAc(b1-?)
+174                                                                                                                    Gal(b1-3)GalNAc(b1-?)
+175                                                                                                                    Gal(b1-?)GlcNAc(b1-?)
+176                                                                                                                    Gal(b1-3)GalNAc(b1-?)
+177                                                                                                                    Gal(b1-4)GlcNAc(b1-?)
+178                                                                                                                    Gal(b1-4)GlcNAc(b1-?)
+179                                                                                                                 GalNAc(b1-4)GlcNAc(b1-?)
+180                                                                                                                    Gal(b1-4)GlcNAc(b1-?)
+181                                                                                                                             Neu5Ac(a2-?)
+182                                                                                                                             Neu5Ac(a2-3)
+183                                                                                                                             Neu5Ac(a2-?)
+184          Glc(a1-2)Glc(a1-3)Man(a1-2)Man(a1-2)Man(a1-3)[Man(a1-2)Man(a1-6)[Man(a1-2)Man(a1-3)]Man(a1-6)]Man(b1-4)GlcNAc(b1-4)GlcNAc(a1-?)
+185          Glc(a1-2)Glc(a1-3)Man(a1-2)Man(a1-2)Man(a1-3)[Man(a1-2)Man(a1-6)[Man(a1-2)Man(a1-3)]Man(a1-6)]Man(b1-4)GlcNAc(b1-4)GlcNAc(a1-?)
+186                                                                                                              Man(a1-2)Man(a1-2)Man(a1-3)
+187                                                                                                              Man(a1-2)Man(a1-2)Man(a1-3)
+               enzclass
+1   Glycosyltransferase
+2   Glycosyltransferase
+3   Glycosyltransferase
+4   Glycosyltransferase
+5   Glycosyltransferase
+6   Glycosyltransferase
+7   Glycosyltransferase
+8   Glycosyltransferase
+9   Glycosyltransferase
+10  Glycosyltransferase
+11  Glycosyltransferase
+12  Glycosyltransferase
+13  Glycosyltransferase
+14  Glycosyltransferase
+15  Glycosyltransferase
+16  Glycosyltransferase
+17  Glycosyltransferase
+18  Glycosyltransferase
+19  Glycosyltransferase
+20  Glycosyltransferase
+21  Glycosyltransferase
+22  Glycosyltransferase
+23  Glycosyltransferase
+24  Glycosyltransferase
+25  Glycosyltransferase
+26  Glycosyltransferase
+27  Glycosyltransferase
+28  Glycosyltransferase
+29  Glycosyltransferase
+30  Glycosyltransferase
+31  Glycosyltransferase
+32  Glycosyltransferase
+33  Glycosyltransferase
+34                     
+35  Glycosyltransferase
+36  Glycosyltransferase
+37                     
+38  Glycosyltransferase
+39  Glycosyltransferase
+40  Glycosyltransferase
+41  Glycosyltransferase
+42  Glycosyltransferase
+43  Glycosyltransferase
+44  Glycosyltransferase
+45  Glycosyltransferase
+46  Glycosyltransferase
+47  Glycosyltransferase
+48  Glycosyltransferase
+49  Glycosyltransferase
+50  Glycosyltransferase
+51  Glycosyltransferase
+52  Glycosyltransferase
+53  Glycosyltransferase
+54  Glycosyltransferase
+55          Glycosidase
+56          Glycosidase
+57  Glycosyltransferase
+58                     
+59          Glycosidase
+60          Glycosidase
+61          Glycosidase
+62          Glycosidase
+63          Glycosidase
+64          Glycosidase
+65          Glycosidase
+66          Glycosidase
+67          Glycosidase
+68          Glycosidase
+69          Glycosidase
+70          Glycosidase
+71          Glycosidase
+72          Glycosidase
+73          Glycosidase
+74             N_linked
+75             N_linked
+76             N_linked
+77  Glycosyltransferase
+78  Glycosyltransferase
+79  Glycosyltransferase
+80  Glycosyltransferase
+81  Glycosyltransferase
+82  Glycosyltransferase
+83          Glycosidase
+84                     
+85  Glycosyltransferase
+86  Glycosyltransferase
+87  Glycosyltransferase
+88  Glycosyltransferase
+89  Glycosyltransferase
+90  Glycosyltransferase
+91  Glycosyltransferase
+92  Glycosyltransferase
+93  Glycosyltransferase
+94  Glycosyltransferase
+95  Glycosyltransferase
+96  Glycosyltransferase
+97  Glycosyltransferase
+98  Glycosyltransferase
+99  Glycosyltransferase
+100 Glycosyltransferase
+101 Glycosyltransferase
+102 Glycosyltransferase
+103 Glycosyltransferase
+104 Glycosyltransferase
+105 Glycosyltransferase
+106 Glycosyltransferase
+107 Glycosyltransferase
+108 Glycosyltransferase
+109 Glycosyltransferase
+110 Glycosyltransferase
+111 Glycosyltransferase
+112 Glycosyltransferase
+113 Glycosyltransferase
+114 Glycosyltransferase
+115 Glycosyltransferase
+116 Glycosyltransferase
+117 Glycosyltransferase
+118 Glycosyltransferase
+119 Glycosyltransferase
+120 Glycosyltransferase
+121 Glycosyltransferase
+122 Glycosyltransferase
+123 Glycosyltransferase
+124 Glycosyltransferase
+125 Glycosyltransferase
+126 Glycosyltransferase
+127 Glycosyltransferase
+128                    
+129         Glycosidase
+130 Glycosyltransferase
+131 Glycosyltransferase
+132                    
+133         Glycosidase
+134 Glycosyltransferase
+135 Glycosyltransferase
+136 Glycosyltransferase
+137 Glycosyltransferase
+138 Glycosyltransferase
+139 Glycosyltransferase
+140 Glycosyltransferase
+141 Glycosyltransferase
+142 Glycosyltransferase
+143 Glycosyltransferase
+144 Glycosyltransferase
+145         Glycosidase
+146         Glycosidase
+147 Glycosyltransferase
+148                    
+149         Glycosidase
+150         Glycosidase
+151         Glycosidase
+152         Glycosidase
+153            N_linked
+154            N_linked
+155            N_linked
+156 Glycosyltransferase
+157 Glycosyltransferase
+158 Glycosyltransferase
+159 Glycosyltransferase
+160                    
+161 Glycosyltransferase
+162         Glycosidase
+163                    
+164         Glycosidase
+165         Glycosidase
+166         Glycosidase
+167         Glycosidase
+168         Glycosidase
+169         Glycosidase
+170         Glycosidase
+171         Glycosidase
+172 Glycosyltransferase
+173 Glycosyltransferase
+174 Glycosyltransferase
+175 Glycosyltransferase
+176 Glycosyltransferase
+177 Glycosyltransferase
+178 Glycosyltransferase
+179 Glycosyltransferase
+180 Glycosyltransferase
+181 Glycosyltransferase
+182 Glycosyltransferase
+183 Glycosyltransferase
+184 Glycosyltransferase
+185 Glycosyltransferase
+186 Glycosyltransferase
+187 Glycosyltransferase
