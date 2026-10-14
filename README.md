@@ -90,3 +90,7 @@ Rscript scripts/supplementary/figS1_column_examples.R   # Figure S1 -> paper/sup
 
 Himori K, Zhang B, Matsui Y. GlyEnzEA: reaction-informed enrichment of enzyme-centered glycan sets from
 glycomics data. Submitted, 2026. (preprint and DOI to be added)
+
+## License
+
+MIT (see `LICENSE`). The source tables in `data/` remain under the terms of their original providers (see Data sources).
